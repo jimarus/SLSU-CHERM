@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background: white;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to left, #08CA97, #118AB2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 135px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo img {
+    width: 75px;
+    height: 75px;
+}
+.logo h1 {
+    font-size: 30px;
+    color: white;
+    line-height: 1.2;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+#objectives{ 
+    padding: 3% 18%;
+}
+#obj{
+    padding: 30px 20px;
+    text-align: start;
+}
+#objectives h2{
+    color: #118AB2;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.num-icon {
+    display: inline-block;
+    height: 135px;
+    margin-bottom: 30px;
+}
+.num-img{
+    display: flex;
+    margin-left: 2%;
+}
+.num-img p {
+    max-width: 85%;
+    margin-left: 3%;
+    margin-top: 10px;
+    font-size: 26px;
+    line-height: 1.6;
+}
+
+footer {
+    background: linear-gradient(#00e8aac4, #017758), url('/img/footer-bg.jpg') center/cover no-repeat;
+    color: white;
+    padding: 25px 20px;
+}
+.footer-overlay {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-left {
+    max-width: 45%;
+    text-align: center;
+}
+.footer-left .logo {
+    width: 60px;
+    margin-bottom: 10px;
+}
+.footer-left h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.footer-left h3 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+.footer-right {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-info p, .address-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+.footer-icon {
+    width: 18px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.contact-info p a{
+    text-decoration: none;
+    color: white;
+}
+.map {
+    width: 180px;
+    height: auto;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}

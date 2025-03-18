@@ -1,0 +1,121 @@
+.navbar {
+    background-image: linear-gradient(to top, #08CA97 0%, #118AB2 100%) !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 20px;
+}
+
+.navbar .container {
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+.navbar .logo-pic {
+    position: absolute;
+    max-height: 90px;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.collapse {
+    justify-content: end;
+}
+
+.collapse .nav-item {
+    margin-left: 80px;
+}
+
+
+/*--------------------------------------------------------------
+# Caraousel
+--------------------------------------------------------------*/
+.carousel-inner .carousel-item {
+    height: 900px;
+    margin-bottom: 0px;
+}
+
+.carousel>.carousel-inner>.carousel-item>.image1 {
+    height: 900px;
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.overlay:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #118AB2;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.carousel>.carousel-inner>.carousel-item>.image2 {
+    height: 900px;
+    width: 100%;
+    margin-top: 3rem;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.carousel>.carousel-inner>.carousel-item>.image3 {
+    height: 900px;
+    width: 100%;
+    object-fit: cover;  
+    background-repeat: no-repeat;
+    background-color: #3468C0;
+    margin-top: 0px;
+}
+
+.box{
+    background-color: #08CA97;
+    height: 300px;
+    width: 1000px;
+    border-radius: 10px;
+    align-content: flex-start;
+    align-self: flex-start;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.event-container {
+    background-image: linear-gradient(to top, #08CA97 0%, #118AB2 100%) !important;
+    padding: 40px 200px 40px 200px;
+}
+
+
+.event-container .title {
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+.event-container .card {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.event-container .card .card-body {
+    padding: 16px 0px 16px 0px;
+}
