@@ -11,7 +11,7 @@ body {
     color: #333;
 }
 
-/* HEADER */
+/* HEADER 
 header {
     background: linear-gradient(to right, #08CA97, #118AB2);
     display: flex;
@@ -42,7 +42,7 @@ nav a {
     color: white;
     text-decoration: none;
     font-size: 35px;
-}
+}*/
 
 /* OBJECTIVES */
 #objectives{ 
