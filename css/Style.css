@@ -27,9 +27,18 @@ html {
 
 .navbar .logo-pic {
     max-height: 90px;
-    margin-right: 50px;
 }
-
+.navbar-brand {
+    display: flex;
+    gap: 2vh;
+}
+.navbar .logo-name {
+    font-size: 2.4rem; 
+    color: white;
+    line-height: 1.2; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
 .collapse {
     justify-content: flex-end;
 }
@@ -475,7 +484,7 @@ iframe{
 
 /* OBJECTIVES */
 #objectives{ 
-    padding: 3% 18%;
+    padding: 10% 18%;
 }
 #obj{
     padding: 0% 4%;
@@ -502,7 +511,7 @@ iframe{
 
 /* EVENTS */
 #events {
-    padding: 3% 14%;
+    padding: 10% 18%;
 }
 #update-events {
     padding: 0% 4%;
@@ -545,7 +554,7 @@ iframe{
 
 /* ACHIEMENTS */
 #achievements {
-    padding: 3% 20%;
+    padding: 10% 18%;
 }
 .list-achieve {
     width: 100%; 
