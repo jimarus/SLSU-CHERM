@@ -69,7 +69,7 @@ html {
 # Caraousel
 --------------------------------------------------------------*/
 .carousel-inner .carousel-item {
-    height: 900px;
+    height: 750px;
     margin-bottom: 0px;
 
 }
@@ -160,10 +160,30 @@ html {
     margin-top: 50px;
 }
 
+.cherm-title {
+    position: absolute;
+    width: 70rem;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    color: white;
+    background-color: #08ca97;
+    padding: 25px 20px;
+    border-radius: 5px;
+}
+.cherm-title h1 {
+    font-size: 2.9rem;
+    font-weight: bold;
+}
+.cherm-title h3 {
+    font-size: 2rem;
+}
 .CHERM .cherm-content{
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 0rem 2rem;
 }
 
 .CHERM .cherm-caption>h1 {
@@ -403,10 +423,10 @@ html {
 }
 
 .footer .cherm .cherm-logo{
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: auto;
     justify-self: center;
-    
+    margin-top: 2.5rem;
 }
 
 .footer .cherm> p{
