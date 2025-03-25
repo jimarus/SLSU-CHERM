@@ -111,22 +111,26 @@ nav a {
     height: 0.3vh;
     width: 40vh;
     background-color: #08ca97b3;
-    margin-bottom: 3%;;
+    margin-bottom: 3%;
 }
 
 /* ACHIEMENTS */
 #achievements {
     padding: 3% 20%;
 }
+.list-achieve {
+    width: 100%; 
+}
 #achieve {
-    padding: 0% 4%;
     display: flex;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 55px;
+    flex-direction: column; 
+    gap: 2vh;
 }
 .achieve-con {
     position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
 }
 .title {
     color: #118AB2;
@@ -135,48 +139,36 @@ nav a {
     letter-spacing: 1px;
     margin-bottom: 3%;
 }
-.achieve-img {
-    width: 45vh;
-    height: 33vh;
-    margin-bottom: 6%;
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
+.achieve-con {
+    display: flex;
+    align-items: center;
+    gap: 3.5vh;
+    background-color: #118ab2ea;
+    padding: 4vh;
+    color: white; 
 }
-.achievement-det {
-    background-color: #118AB2;
-    padding: 5% 5%;
-    margin: 0% 3% 28% 28%;
-    position: relative;
-    z-index: 1;
+.achieve-img {
+    max-width: 360px; 
+    height: auto;
+    display: block;
+    border-radius: 10px; 
 }
 .achievement-det h2 {
-    font-size: 24px;
-    margin-bottom: 3%;
-    width: 99%;
-    color: #ffffff;
+    font-size: 1.7em; 
+    margin-bottom: 10px;
 }
 .achievement-det p {
-    font-size: 17px;
-    margin-bottom: 3%;
-    width: 99.5%;
-    text-align: justify;
-    color: #ffffff;
+    line-height: 1.5; 
 }
-.achieve-det span{
+.setting {
+    font-style: italic;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.list-achieve span {
     display: block;
-    height: 0.3vh;
-    width: 40vh;
-    background-color: #08ca97b3;
-    margin-bottom: 3%;;
+    height: 1px;
+    width: 118vh;
+    background-color: #5a5a5a86;
+    margin-bottom: 1.5%;
 }
-
-
-
-
-  
-
-
-
-
