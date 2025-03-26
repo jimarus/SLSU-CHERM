@@ -329,28 +329,31 @@ html {
     border-style: none;
 }
 
-.event-content .btn> button{
+.event-content .btn .event-btn{
     background-color: #08CA97;
     border-color: #08CA97;
     color: white;
     font-size: 1.3rem;
     border-style: none;
     border-radius: 0.3em;
+    text-decoration: none;
     padding: 5px 15px 5px 15px;
 }
 
-.event-content .btn> button:hover{
+.event-content .btn .event-btn:hover{
     background-color: #08ca96c4;
     border-color: #08ca96c4;
+    text-decoration: none;
     color: white;
 }
 
-.event-content .btn> button:active{
+.event-content .btn .event-btn:active{
     background-color: #0aa279ee;
     border-color: #0aa279ee;
     color: white;
     transform: translateY(2px);
     transition-duration: .35s;
+    text-decoration: none;
 }
 
 
