@@ -28,17 +28,20 @@ html {
 .navbar .logo-pic {
     max-height: 90px;
 }
+
 .navbar-brand {
     display: flex;
     gap: 2vh;
 }
+
 .navbar .logo-name {
-    font-size: 2.4rem; 
+    font-size: 2.4rem;
     color: white;
-    line-height: 1.2; 
+    line-height: 1.2;
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .collapse {
     justify-content: flex-end;
 }
@@ -49,7 +52,7 @@ html {
 }
 
 .dropdown-menu {
-    background-color:#08CA97 !important;
+    background-color: #08CA97 !important;
     border-style: none !important;
 }
 
@@ -116,7 +119,7 @@ html {
     margin-top: 0px;
 }
 
-.carousel-item .carousel-caption{
+.carousel-item .carousel-caption {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -173,14 +176,17 @@ html {
     padding: 25px 20px;
     border-radius: 5px;
 }
+
 .cherm-title h1 {
     font-size: 2.9rem;
     font-weight: bold;
 }
+
 .cherm-title h3 {
     font-size: 2rem;
 }
-.CHERM .cherm-content{
+
+.CHERM .cherm-content {
     display: flex;
     justify-content: center;
     padding: 0rem 2rem;
@@ -199,7 +205,7 @@ html {
     width: 750px;
 }
 
-.CHERM .cherm-caption> button{
+.CHERM .cherm-caption>button {
     background-color: #08CA97;
     border-color: #08CA97;
     color: white;
@@ -209,13 +215,13 @@ html {
     padding: 5px 15px 5px 15px;
 }
 
-.CHERM .cherm-caption> button:hover{
+.CHERM .cherm-caption>button:hover {
     background-color: #08ca96c4;
     border-color: #08ca96c4;
     color: white;
 }
 
-.CHERM .cherm-caption> button:active{
+.CHERM .cherm-caption>button:active {
     background-color: #0aa279ee;
     border-color: #0aa279ee;
     color: white;
@@ -295,7 +301,7 @@ html {
 }
 
 .event-container {
-    background-image: linear-gradient(to top,  #118AB2 0%, #08CA97 100%) !important;
+    background-image: linear-gradient(to top, #118AB2 0%, #08CA97 100%) !important;
     width: 100%;
     padding: 40px 200px 40px 200px;
 }
@@ -322,14 +328,14 @@ html {
     padding: 16px 0px 16px 0px;
 }
 
-.event-content .btn{
+.event-content .btn {
     display: flex;
     justify-content: end;
     align-items: end;
     border-style: none;
 }
 
-.event-content .btn .event-btn{
+.event-content .btn .event-btn {
     background-color: #08CA97;
     border-color: #08CA97;
     color: white;
@@ -340,14 +346,14 @@ html {
     padding: 5px 15px 5px 15px;
 }
 
-.event-content .btn .event-btn:hover{
+.event-content .btn .event-btn:hover {
     background-color: #08ca96c4;
     border-color: #08ca96c4;
     text-decoration: none;
     color: white;
 }
 
-.event-content .btn .event-btn:active{
+.event-content .btn .event-btn:active {
     background-color: #0aa279ee;
     border-color: #0aa279ee;
     color: white;
@@ -398,7 +404,7 @@ html {
     justify-content: center;
 }
 
-.footer .bagong-pilipinas{
+.footer .bagong-pilipinas {
     display: flex;
     flex-direction: column;
     height: 30vh;
@@ -408,14 +414,14 @@ html {
     margin: 10px;
 }
 
-.footer .bagong-pilipinas .bagong-pilipinas-logo{
+.footer .bagong-pilipinas .bagong-pilipinas-logo {
     width: 150px;
     height: 150px;
     justify-self: center;
-    
+
 }
 
-.footer .cherm{
+.footer .cherm {
     display: flex;
     flex-direction: column;
     height: 30vh;
@@ -425,32 +431,32 @@ html {
     margin: 20px;
 }
 
-.footer .cherm .cherm-logo{
+.footer .cherm .cherm-logo {
     width: 90px;
     height: auto;
     justify-self: center;
     margin-top: 2.5rem;
 }
 
-.footer .cherm> p{
+.footer .cherm>p {
     color: white !important;
     text-transform: uppercase;
     font-weight: bold;
     font-family: "Inria Sans", sans-serif;
 }
 
-.contact-us{
+.contact-us {
     margin-left: 80px;
 }
 
-.contact-us>p{
+.contact-us>p {
     color: white;
     text-transform: uppercase;
     font-weight: bold;
     font-family: "Inria Sans", sans-serif;
 }
 
-.facebook{
+.facebook {
     color: white;
     display: flex;
     height: 5vh;
@@ -460,12 +466,12 @@ html {
     margin-bottom: 20px;
 }
 
-.facebook .icon{
+.facebook .icon {
     object-fit: contain;
     margin-right: 10px;
 }
 
-.gmail{
+.gmail {
     color: white;
     display: flex;
     height: 5vh;
@@ -474,12 +480,12 @@ html {
     font-size: 1.063rem;
 }
 
-.gmail .icon{
+.gmail .icon {
     object-fit: contain;
     margin-right: 10px;
 }
 
-.address{
+.address {
     color: white;
     display: flex;
     flex-direction: column;
@@ -489,7 +495,7 @@ html {
     margin-top: 50px;
 }
 
-iframe{
+iframe {
     border-radius: 0.5em;
     margin-top: 30px;
 }
@@ -523,24 +529,28 @@ iframe{
 
 
 /* OBJECTIVES */
-#objectives{ 
+#objectives {
     padding: 10% 18%;
 }
-#obj{
+
+#obj {
     padding: 0% 4%;
     text-align: start;
     display: flex;
     flex-direction: column;
 }
+
 .num-icon {
     display: inline-block;
     height: 135px;
     margin-bottom: 30px;
 }
-.num-img{
+
+.num-img {
     display: flex;
     margin-left: 2%;
 }
+
 .num-img p {
     max-width: 85%;
     margin-left: 3%;
@@ -553,6 +563,7 @@ iframe{
 #events {
     padding: 10% 18%;
 }
+
 #update-events {
     padding: 0% 4%;
     display: flex;
@@ -560,6 +571,7 @@ iframe{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 55px;
 }
+
 .title {
     color: #118AB2;
     font-size: 50px;
@@ -567,24 +579,28 @@ iframe{
     letter-spacing: 1px;
     margin-bottom: 3%;
 }
+
 .event-img {
     width: 40vh;
     height: 30vh;
     margin-bottom: 6%;
 }
+
 .event-det h2 {
     font-size: 24px;
     margin-bottom: 3%;
     width: 99%;
     color: #118AB2;
 }
+
 .event-det p {
     font-size: 17px;
     margin-bottom: 3%;
     width: 99.5%;
     text-align: justify;
 }
-.event-det span{
+
+.event-det span {
     display: block;
     height: 0.3vh;
     width: 40vh;
@@ -596,20 +612,24 @@ iframe{
 #achievements {
     padding: 10% 18%;
 }
+
 .list-achieve {
-    width: 100%; 
+    width: 100%;
 }
+
 #achieve {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 2vh;
 }
+
 .achieve-con {
     position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 3%;
 }
+
 .title {
     color: #118AB2;
     font-size: 50px;
@@ -617,36 +637,161 @@ iframe{
     letter-spacing: 1px;
     margin-bottom: 3%;
 }
+
 .achieve-con {
     display: flex;
     align-items: center;
     gap: 3.5vh;
     background-color: #118ab2ea;
     padding: 4vh;
-    color: white; 
+    color: white;
 }
+
 .achieve-img {
-    max-width: 360px; 
+    max-width: 360px;
     height: auto;
     display: block;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
+
 .achievement-det h2 {
-    font-size: 1.7em; 
+    font-size: 1.7em;
     margin-bottom: 10px;
 }
+
 .achievement-det p {
-    line-height: 1.5; 
+    line-height: 1.5;
 }
+
 .setting {
     font-style: italic;
     margin-bottom: 2%;
     margin-top: 2%;
 }
+
 .list-achieve span {
     display: block;
     height: 1px;
     width: 118vh;
     background-color: #5a5a5a86;
     margin-bottom: 1.5%;
+}
+
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .navbar .logo-pic {
+        max-height: 80px;
+    }
+
+    .logo-name {
+        font-size: 2rem !important;
+    }
+
+    .navbar-nav .nav-link {
+        color: white !important;
+        font-size: 19px;
+    }
+
+}
+
+@media only screen and (min-width: 880px) and (max-width: 992px) {
+    .navbar .logo-pic {
+        max-height: 70px;
+    }
+
+    .logo-name {
+        font-size: 1.8rem !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 880px) {
+    .navbar .logo-pic {
+        max-height: 70px;
+    }
+
+    .logo-name {
+        font-size: 1.8rem !important;
+    }
+
+    .collapse .nav-item {
+        margin-left: 60px;
+
+    }
+
+    .navbar-content {
+        margin-left: 50px;
+        margin-right: 80px;
+    }
+
+    .navbar .navbar-toggler{
+        border: none !important;
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .navbar .logo-pic {
+        max-height: 60px;
+    }
+
+    .logo-name {
+        font-size: 1.5rem !important;
+    }
+
+    .navbar-content {
+        margin-left: 60px;
+    }
+
+    .navbar .navbar-toggler{
+        border: none !important;
+    }
+
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 575px) {
+    .navbar .logo-pic {
+        max-height: 60px;
+    }
+
+    .logo-name {
+        font-size: 1.5rem !important;
+    }
+
+    .navbar-content {
+        margin-left: 60px;
+    }
+
+    .navbar .navbar-toggler{
+        border: none !important;
+    }
+
+    .navbar .navbar-toggler{
+        margin-left: 180px !important;
+    }
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+    .navbar .logo-pic {
+        max-height: 50px;
+    }
+
+    .logo-name {
+        font-size: 1.4rem !important;
+    }
+
+    .navbar-content {
+        margin-left: 40px;
+    }
+
+    .navbar .navbar-toggler{
+        border: none !important;
+        width: 4rem !important;
+        height: 4rem !important;
+        background-size: contain !important;
+        margin-left: 90px !important;
+    }
 }
