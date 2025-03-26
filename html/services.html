@@ -64,7 +64,7 @@
             </div>  
             <div class="inquiry-btn">
                     <p>Check the guidelines for submitting a service request.</p>
-                    <button onclick="#">Click Here</button>
+                    <button type="button" class="btn-open-modal" onclick="openModal()">Click Here</button>
             </div>      
 
             <div class="list-services">
@@ -81,7 +81,7 @@
             </div>  
             <div class="inquiry-btn">
                     <p>Check the guidelines for submitting a service request.</p>
-                    <button onclick="#">Click Here</button>
+                    <button type="button" class="btn-open-modal" onclick="openModal()">Click Here</button>
             </div>         
 
             <div class="list-services">
@@ -98,6 +98,43 @@
             </div> 
         </div>
     </section>
+
+    <div class="modal" id="serviceModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">GEO-MAPPING</h3>
+              <span class="line-modal"></span>
+              <button type="button" class="close-btn" onclick="closeModal()" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+              <h5>INTERNAL CLIENT</h5>
+              <p>Guidelines for submitting a request for Mapping.</p>
+              <div class="qrcode">
+                <p><strong>Scan Here:</strong></p>
+                <img src="/img/qr-int-mapping.png" alt="QR Code">
+                <p><strong>Form Link:</strong></p>
+                <p>https://tinyurl.com/CHERMGMInt</p>
+              </div>
+              <div class="guidelines">
+                <p><strong>Address your Request to:</strong></p>
+                <p>Dr. Nicanor L. Guinto <br/> <i>Director, Research Services</i></p>
+                <p><strong>Thru:</strong></p>
+                <p>Mr. Anthony L. Empamano <br/> <i>Center Chief, CHERM</i></p>
+                <p><strong>File Name Format:</strong></p>
+                <p>Name your file using this format: <br/><i> GISMR_OFFICEorCOLLEGE_YourInitials.pdf </i></p>
+                <p><strong>Example:</strong></p>
+                <p>If you're from CHERM and your initials are JDC, your file should be named: <br/><i> GISMR_CHERM_JDC.pdf </i></p>
+              </div>
+            </div>
+            <span class="line-modal"></span>
+            <div class="modal-footer">
+                <button type="button" class="btn-close-modal" onclick="closeModal()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <br>
     <br>
     <br>
@@ -145,5 +182,21 @@
       <!-- Bootstrap JS -->
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+      <script>
+        function openModal() {
+        document.getElementById('serviceModal').style.display = 'block';
+        }
+
+        function closeModal() {
+        document.getElementById('serviceModal').style.display = 'none';
+        }
+        
+        window.onclick = function (event) {
+        const modal = document.getElementById('serviceModal');
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+        };
+      </script>
     </body>
 </html>

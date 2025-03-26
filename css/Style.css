@@ -725,5 +725,73 @@ iframe{
     background-color: #06a57a; 
 }
 
-
-
+/* SERVICES MODAL */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  .modal-dialog {
+    margin: 10% auto;
+    background: #fff;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  .modal-header,
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .modal-body {
+    margin: 15px 0;
+  }
+  
+  .btn-close-modal {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn-close-modal:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-open-modal {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn-open-modal:hover {
+    background-color: #0056b3;
+  }
