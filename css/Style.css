@@ -733,3 +733,113 @@ iframe {
 .inquiry-btn button:hover {
     background-color: #06a57a;
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .navbar .logo-pic {
+        max-height: 80px;
+    }
+
+    .logo-name {
+        font-size: 2rem !important;
+    }
+
+    .navbar-nav .nav-link {
+        color: white !important;
+        font-size: 19px;
+    }
+}
+
+@media only screen and (min-width: 880px) and (max-width: 992px) {
+    .navbar .logo-pic {
+        max-height: 70px;
+    }
+
+    .logo-name {
+        font-size: 1.8rem !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 880px) {
+    .navbar .logo-pic {
+        max-height: 70px;
+    }
+
+    .logo-name {
+        font-size: 1.8rem !important;
+    }
+
+    .collapse .nav-item {
+        margin-left: 60px;
+    }
+
+    .navbar-content {
+        margin-left: 50px;
+        margin-right: 80px;
+    }
+
+    .navbar .navbar-toggler {
+        border: none !important;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .navbar .logo-pic {
+        max-height: 60px;
+    }
+
+    .logo-name {
+        font-size: 1.5rem !important;
+    }
+
+    .navbar-content {
+        margin-left: 60px;
+    }
+
+    .navbar .navbar-toggler {
+        border: none !important;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 575px) {
+    .navbar .logo-pic {
+        max-height: 60px;
+    }
+
+    .logo-name {
+        font-size: 1.5rem !important;
+    }
+
+    .navbar-content {
+        margin-left: 60px;
+    }
+
+    .navbar .navbar-toggler {
+        border: none !important;
+    }
+
+    .navbar .navbar-toggler {
+        margin-left: 180px !important;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+    .navbar .logo-pic {
+        max-height: 50px;
+    }
+
+    .logo-name {
+        font-size: 1.4rem !important;
+    }
+
+    .navbar-content {
+        margin-left: 40px;
+    }
+
+    .navbar .navbar-toggler {
+        border: none !important;
+        width: 4rem !important;
+        height: 4rem !important;
+        background-size: contain !important;
+        margin-left: 90px !important;
+    }
+}
