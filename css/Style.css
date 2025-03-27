@@ -614,9 +614,10 @@ iframe {
     display: flex;
     align-items: center;
     gap: 3.5vh;
-    background-color: #118ab2ea;
+    background-color: #118ab22f;
+    border-left: 4px solid #118AB2;
     padding: 4vh;
-    color: white;
+    color: rgba(14, 14, 14, 0.959);
 }
 
 .achieve-img {
@@ -644,7 +645,7 @@ iframe {
 .list-achieve span {
     display: block;
     height: 1px;
-    width: 118vh;
+    width: 126vh;
     background-color: #5a5a5a86;
     margin-bottom: 1.5%;
 }
