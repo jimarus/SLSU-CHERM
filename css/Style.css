@@ -744,42 +744,88 @@ iframe {
     width: 100%;
     height: 100%;
     overflow: auto;
+<<<<<<< HEAD
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+=======
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+.modal-details {
+    display: flex;
+    font-size: 1rem;
+    line-height: 1.1;
+}
+>>>>>>> 3a2bdc7aa1b9a6f38aad4d012081419f58f69c3c
 .modal-dialog {
     margin: 10% auto;
     background: #fff;
     border-radius: 5px;
-    width: 80%;
-    max-width: 500px;
+    width: 44% !important;
+    max-width: 44% !important;
     padding: 20px;
 }
+<<<<<<< HEAD
 
 .modal-header,
+=======
+.modal-content {
+    padding: 3%;
+}
+.client-type {
+    font-size: 1.4rem;
+}
+>>>>>>> 3a2bdc7aa1b9a6f38aad4d012081419f58f69c3c
 .modal-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+<<<<<<< HEAD
 
 .modal-title {
     font-size: 18px;
     font-weight: bold;
 }
 
+=======
+.modal-header 
+.modal-title {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+.separator {
+    display: block;
+    height: 0.3vh;
+    width: 73vh;
+    background-color: #08ca97b3;
+    margin-left: 2vh;
+}
+.guidelines {
+    margin-left: 5vh;
+}
+.qrcode img {
+    height: 20vh;
+    width: auto;
+    margin-bottom: 6%;
+}
+>>>>>>> 3a2bdc7aa1b9a6f38aad4d012081419f58f69c3c
 .close-btn {
     background: none;
     border: none;
     font-size: 20px;
     cursor: pointer;
 }
+<<<<<<< HEAD
 
 .modal-body {
     margin: 15px 0;
 }
 
 .btn-close-modal {
+=======
+  .btn-close-modal {
+>>>>>>> 3a2bdc7aa1b9a6f38aad4d012081419f58f69c3c
     background-color: #007bff;
     color: white;
     border: none;
@@ -787,11 +833,17 @@ iframe {
     cursor: pointer;
     border-radius: 5px;
 }
+<<<<<<< HEAD
 
 .btn-close-modal:hover {
     background-color: #0056b3;
 }
 
+=======
+.btn-close-modal:hover {
+    background-color: #0056b3;
+}
+>>>>>>> 3a2bdc7aa1b9a6f38aad4d012081419f58f69c3c
 .btn-open-modal {
     background-color: #007bff;
     color: white;
@@ -800,6 +852,7 @@ iframe {
     cursor: pointer;
     border-radius: 5px;
 }
+<<<<<<< HEAD
 
 .btn-open-modal:hover {
     background-color: #0056b3;
@@ -921,4 +974,8 @@ iframe {
         background-size: contain !important;
         margin-left: 90px !important;
     }
+=======
+.btn-open-modal:hover {
+    background-color: #0056b3;
+>>>>>>> 3a2bdc7aa1b9a6f38aad4d012081419f58f69c3c
 }
