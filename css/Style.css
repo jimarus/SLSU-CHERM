@@ -80,23 +80,81 @@ html {
 /*--------------------------------------------------------------
 # Cherm Video
 --------------------------------------------------------------*/
-video {
+/* video {
     width: 100%;
     height: 850px;
     object-fit: contain;
     display: block;
     margin: 0 auto;
     background-color: #000;
+} */
+
+#Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
 }
-
-
+#Home .slsu {
+    flex: 1;
+    max-width: 30%;
+    max-height: 717px;
+    text-align: center;
+    align-items: center;
+    background-image: url('/img/');
+    padding-left: 1%;
+    padding-right: 2%;
+    display: grid;
+}
+#Home .dost {
+    flex: 1;
+    max-width: 30%;
+    max-height: 717px;
+    text-align: center;
+    align-items: center;
+    background-image: url('/img/');
+    padding-left: 2%;
+    padding-right: 0.5%;
+    display: grid;
+}
+#Home video {
+    flex: 1;
+    max-width: 67%;
+    height: auto;
+    border-radius: 0px;
+    margin-top: 8vh;
+}
+#Home .slsu img, #Home .dost img {
+    max-width: 85%;
+    height: auto;
+    margin-bottom: 0%;
+    margin-top: 37%;
+    margin-left: 7%;
+}
+#Home .slsu h5, #Home .dost h5 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    color: #333;
+    width: 100%;
+}
+#Home .slsu p, #Home .dost p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    text-align: justify;
+    width: 100%;
+    border-bottom: 1px solid #343a40;
+    border-top: 1px solid #343a40;
+    padding: 8%;
+}
 .hr1 {
     font-size: 500;
     border: 5px solid #118AB2;
     width: 90%;
     align-self: center;
     margin: auto;
-    margin-top: 50px;
+    margin-top: px;
 }
 
 .hr2 {
@@ -109,26 +167,21 @@ video {
 }
 
 .cherm-title {
-    position: absolute;
-    width: 70rem;
-    top: 78%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+    width: 119rem;
+    align-items: center;
     text-align: center;
-    color: white;
-    background-color: #08ca97;
-    padding: 25px 20px;
-    border-radius: 5px;
+    padding: 1vh 0vh;
+    color: #118AB2;
 }
 
 .cherm-title h1 {
-    font-size: 2.9rem;
+    font-size: 3.2rem;
     font-weight: bold;
 }
 
 .cherm-title h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .CHERM .cherm-content {
@@ -591,7 +644,7 @@ iframe {
     margin-bottom: 1.5%;
 }
 
-/* ACHIEVEMENTS */
+/* SERVICES */
 #services {
     padding: 10% 18%;
 }
