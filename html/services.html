@@ -65,7 +65,7 @@
             </div>  
             <div class="inquiry-btn">
                     <p>Check the guidelines for submitting a service request.</p>
-                    <button type="button" class="btn-open-modal" onclick="openModal()">Click Here</button>
+                    <button type="button" class="btn-open-modal" onclick="openModal1()">Click Here</button>
             </div>      
 
             <div class="list-services">
@@ -82,7 +82,7 @@
             </div>  
             <div class="inquiry-btn">
                     <p>Check the guidelines for submitting a service request.</p>
-                    <button type="button" class="btn-open-modal" onclick="openModal()">Click Here</button>
+                    <button type="button" class="btn-open-modal" onclick="openModal2()">Click Here</button>
             </div>         
 
             <div class="list-services">
@@ -100,12 +100,13 @@
         </div>
     </section>
 
-    <div class="modal" id="serviceModal" tabindex="-1">
+    <!-- MODAL 1 -->
+    <div class="modal" id="serviceModal1" tabindex="-1">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h3 class="modal-title">GEO-MAPPING</h3>
-              <button type="button" class="close-btn" onclick="closeModal()" aria-label="Close">&times;</button>
+              <h3 class="modal-title">GIS MAPPING REQUISITION</h3>
+              <button type="button" class="close-btn" onclick="closeModal1()" aria-label="Close">&times;</button>
             </div>
             <span class="separator"></span>
             <div class="modal-body">                
@@ -126,13 +127,104 @@
                     <p><strong>File Name Format:</strong></p>
                     <p>Name your file using this format: <br/><i> GISMR_OFFICEorCOLLEGE_YourInitials.pdf </i></p>
                     <p><strong>Example:</strong></p>
-                    <p>If you're from CHERM and your initials are JDC, your file should be named: <br/><i> GISMR_CHERM_JDC.pdf </i></p>
+                    <p> GISMR_CHERM_JDC.pdf </p>
                 </div>
             </div>
             </div>
+
             <span class="line-modal"></span>
+
+            <div class="modal-body">                
+                <p class="client-type"><strong>EXTERNAL CLIENT</strong></p>
+                <p>Guidelines for Submitting a Request for Mapping.</p>
+                <div class="modal-details">
+                  <div class="qrcode">
+                      <p><strong>Scan Here:</strong></p>
+                      <img src="/img/qr-ext-mapping.png" alt="QR Code">
+                      <p><strong>Form Link:</strong></p>
+                      <a href="https://tinyurl.com/CHERMGMExt"><p>https://tinyurl.com/CHERMGMExt</p></a>
+                  </div>
+                  <div class="guidelines">
+                      <p><strong>Address your Request to:</strong></p>
+                      <p>Dr. Frederick T. Villa <br/> <i>University President</i></p>
+                      <p><strong>Thru:</strong></p>
+                      <p>Dr. Nicanor L. Guinto <br/> <i>Director, Research Services</i></p>
+                      <p>Mr. Anthony L. Empamano <br/> <i>Center Chief, CHERM</i></p>
+                      <p><strong>File Name Format:</strong></p>
+                      <p>Name your file using this format: <br/><i> GISMR_AGENCY/OFFICE_YourInitials.pdf </i></p>
+                      <p><strong>Example:</strong></p>
+                      <p> GISMR_QZNPRV_JDC.pdf </p>
+                  </div>
+              </div>
+              </div>
+
             <div class="modal-footer">
-                <button type="button" class="btn-close-modal" onclick="closeModal()">Close</button>
+                <button type="button" class="btn-close-modal" onclick="closeModal1()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL 2 -->
+    <div class="modal" id="serviceModal2" tabindex="-2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">GIS TRAINING REQUISITION</h3>
+              <button type="button" class="close-btn" onclick="closeModal2()" aria-label="Close">&times;</button>
+            </div>
+            <span class="separator"></span>
+            <div class="modal-body">                
+              <p class="client-type"><strong>INTERNAL CLIENT</strong></p>
+              <p>Guidelines for Submitting a Request for Training.</p>
+              <div class="modal-details">
+                <div class="qrcode">
+                    <p><strong>Scan Here:</strong></p>
+                    <img src="/img/qr-int-training.png" alt="QR Code">
+                    <p><strong>Form Link:</strong></p>
+                    <a href="https://tinyurl.com/CHERMGTInt"><p>https://tinyurl.com/CHERMGTInt</p></a>
+                </div>
+                <div class="guidelines">
+                    <p><strong>Address your Request to:</strong></p>
+                    <p>Dr. Nicanor L. Guinto <br/> <i>Director, Research Services</i></p>
+                    <p><strong>Thru:</strong></p>
+                    <p>Mr. Anthony L. Empamano <br/> <i>Center Chief, CHERM</i></p>
+                    <p><strong>File Name Format:</strong></p>
+                    <p>Name your file using this format: <br/><i> GISTR_OFFICEorCOLLEGE_YourInitials.pdf </i></p>
+                    <p><strong>Example:</strong></p>
+                    <p> GISTR_CHERM_JDC.pdf </p>
+                </div>
+            </div>
+            </div>
+
+            <span class="line-modal"></span>
+
+            <div class="modal-body">                
+                <p class="client-type"><strong>EXTERNAL CLIENT</strong></p>
+                <p>Guidelines for Submitting a Request for Training.</p>
+                <div class="modal-details">
+                  <div class="qrcode">
+                      <p><strong>Scan Here:</strong></p>
+                      <img src="/img/qr-ext-training.png" alt="QR Code">
+                      <p><strong>Form Link:</strong></p>
+                      <a href="https://tinyurl.com/CHERMGTExt"><p>https://tinyurl.com/CHERMGTExt</p></a>
+                  </div>
+                  <div class="guidelines">
+                      <p><strong>Address your Request to:</strong></p>
+                      <p>Dr. Frederick T. Villa <br/> <i>University President</i></p>
+                      <p><strong>Thru:</strong></p>
+                      <p>Dr. Nicanor L. Guinto <br/> <i>Director, Research Services</i></p>
+                      <p>Mr. Anthony L. Empamano <br/> <i>Center Chief, CHERM</i></p>
+                      <p><strong>File Name Format:</strong></p>
+                      <p>Name your file using this format: <br/><i> GISTR_AGENCY/OFFICE_YourInitials.pdf </i></p>
+                      <p><strong>Example:</strong></p>
+                      <p> GISTR_QZNPRV_JDC.pdf </p>
+                  </div>
+              </div>
+              </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn-close-modal" onclick="closeModal2()">Close</button>
             </div>
           </div>
         </div>
@@ -186,19 +278,33 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
       <script>
-        function openModal() {
-        document.getElementById('serviceModal').style.display = 'block';
+        function openModal1() {
+        document.getElementById('serviceModal1').style.display = 'block';
         }
 
-        function closeModal() {
-        document.getElementById('serviceModal').style.display = 'none';
+        function closeModal1() {
+        document.getElementById('serviceModal1').style.display = 'none';
+        }
+
+        function openModal2() {
+        document.getElementById('serviceModal2').style.display = 'block';
+        }
+
+        function closeModal2() {
+        document.getElementById('serviceModal2').style.display = 'none';
         }
         
         window.onclick = function (event) {
-        const modal = document.getElementById('serviceModal');
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
+        const modal1 = document.getElementById('serviceModal1');
+        const modal2 = document.getElementById('serviceModal2');
+
+            if (event.target === modal1) {
+                modal1.style.display = 'none';
+            }
+
+            if (event.target === modal2) {
+                modal2.style.display = 'none';
+            }
         };
       </script>
     </body>

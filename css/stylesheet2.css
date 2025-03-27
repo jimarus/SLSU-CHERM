@@ -22,6 +22,7 @@
     width: 44% !important;
     max-width: 44% !important;
     padding: 20px;
+    position: relative;
 }
 .modal-content {
     padding: 3%;
@@ -42,10 +43,10 @@
 }
 .separator {
     display: block;
-    height: 0.3vh;
-    width: 73vh;
+    height: 0.4vh;
+    width: 100%;
     background-color: #08ca97b3;
-    margin-left: 2vh;
+    margin-bottom: 1vh;
 }
 .guidelines {
     margin-left: 5vh;
@@ -58,35 +59,32 @@
 .close-btn {
     background: none;
     border: none;
-    font-size: 20px;
     cursor: pointer;
+    position: absolute;
+    top: 0.5%;
+    right: 1.5%;
+    font-size: 1.7rem;
+    color: #414141;
 }
   .btn-close-modal {
-    background-color: #007bff;
+    background-color: #08CA97;
     color: white;
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    padding: 1vh;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    height: 1%;
+    width: auto;
 }
 .btn-close-modal:hover {
-    background-color: #0056b3;
-}
-.btn-open-modal {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.btn-open-modal:hover {
-    background-color: #0056b3;
+    background-color: #06a57a;
 }
 .line-modal {
     display: block;
     height: 0.1vh;
-    width: 68vh;
+    width: 100%;
     background-color: #3f3f3f59;
-    margin-left: 5vh;
+    margin-bottom: 1vh;
 }
