@@ -51,6 +51,15 @@ html {
 
 }
 
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.navbar-nav .dropdown-menu {
+    transition: all 0.3s ease-in-out;
+}
+
 .dropdown-menu {
     background-color: #08CA97 !important;
     border-style: none !important;
@@ -69,79 +78,15 @@ html {
 
 
 /*--------------------------------------------------------------
-# Caraousel
+# Cherm Video
 --------------------------------------------------------------*/
-.carousel-inner .carousel-item {
-    height: 750px;
-    margin-bottom: 0px;
-
-}
-
-.carousel>.carousel-inner>.carousel-item>.image1 {
-    height: 900px;
+video {
     width: 100%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-.overlay:after {
-    content: "";
+    height: 850px;
+    object-fit: contain;
     display: block;
-    position: absolute;
-    height: 900px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #118AB2;
-    opacity: 0.5;
-    z-index: 1;
-}
-
-.carousel>.carousel-inner>.carousel-item>.image2 {
-    height: 900px;
-    width: 100%;
-    margin-top: 3rem;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-.carousel>.carousel-inner>.carousel-item>.image3 {
-    height: 900px;
-    width: 100%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-color: #3468C0;
-    margin-top: 0px;
-}
-
-.carousel-item .carousel-caption {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-item .slide-title1 {
-    position: relative;
-    font-size: 2.5rem;
-    font-family: Poppins, sans-serif;
-    font-weight: bold;
-    z-index: 2;
-
-}
-
-.carousel-item .slide-title2 {
-    position: relative;
-    font-size: 3rem;
-    font-family: Poppins, sans-serif;
-    font-weight: bold;
-    z-index: 2;
+    margin: 0 auto;
+    background-color: #000;
 }
 
 
@@ -397,6 +342,7 @@ html {
 .footer {
     background-repeat: repeat;
     width: 100%;
+    overflow: hidden;
     height: 420px;
     object-fit: contain;
     background-image: url('/img/footer-background.png');
@@ -410,8 +356,7 @@ html {
     height: 30vh;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    margin: 10px;
+    margin-top: 10px;
 }
 
 .footer .bagong-pilipinas .bagong-pilipinas-logo {
@@ -443,10 +388,6 @@ html {
     text-transform: uppercase;
     font-weight: bold;
     font-family: "Inria Sans", sans-serif;
-}
-
-.contact-us {
-    margin-left: 80px;
 }
 
 .contact-us>p {
