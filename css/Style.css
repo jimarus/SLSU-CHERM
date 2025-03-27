@@ -500,34 +500,6 @@ iframe {
     margin-top: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* OBJECTIVES */
 #objectives {
     padding: 10% 18%;
@@ -677,6 +649,161 @@ iframe {
     margin-bottom: 1.5%;
 }
 
+/* ACHIEVEMENTS */
+#services {
+    padding: 10% 18%;
+}
+
+#service {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 0% 5%;
+}
+
+.list-services {
+    display: flex;
+    align-items: flex-start;
+    gap: 2%;
+}
+
+.icon-service {
+    width: 16vh;
+    height: 16vh;
+    background-color: #08CA97;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.icon-service img {
+    max-width: 73%;
+    max-height: 73%;
+    width: auto;
+    height: auto;
+}
+
+.services-con {
+    background-color: #118AB2;
+    padding: 2vh 3vh;
+    border-radius: 7px;
+    color: white;
+    min-height: auto;
+    height: 16vh;
+}
+
+.services-con h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.services-con p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.inquiry-btn {
+    margin-bottom: 1%;
+    margin-left: 1%;
+    display: flex;
+}
+
+.inquiry-btn p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-right: 2%;
+    padding-top: 1vh;
+}
+
+.inquiry-btn button {
+    background-color: #08CA97;
+    color: white;
+    border: none;
+    padding: 1vh;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    height: 1%;
+    width: auto;
+}
+
+.inquiry-btn button:hover {
+    background-color: #06a57a;
+}
+
+/* SERVICES MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+    margin: 10% auto;
+    background: #fff;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.modal-header,
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-body {
+    margin: 15px 0;
+}
+
+.btn-close-modal {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-close-modal:hover {
+    background-color: #0056b3;
+}
+
+.btn-open-modal {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-open-modal:hover {
+    background-color: #0056b3;
+}
 
 
 
@@ -725,7 +852,7 @@ iframe {
         margin-right: 80px;
     }
 
-    .navbar .navbar-toggler{
+    .navbar .navbar-toggler {
         border: none !important;
     }
 
@@ -744,7 +871,7 @@ iframe {
         margin-left: 60px;
     }
 
-    .navbar .navbar-toggler{
+    .navbar .navbar-toggler {
         border: none !important;
     }
 
@@ -764,11 +891,11 @@ iframe {
         margin-left: 60px;
     }
 
-    .navbar .navbar-toggler{
+    .navbar .navbar-toggler {
         border: none !important;
     }
 
-    .navbar .navbar-toggler{
+    .navbar .navbar-toggler {
         margin-left: 180px !important;
     }
 
@@ -787,7 +914,7 @@ iframe {
         margin-left: 40px;
     }
 
-    .navbar .navbar-toggler{
+    .navbar .navbar-toggler {
         border: none !important;
         width: 4rem !important;
         height: 4rem !important;
