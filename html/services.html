@@ -23,31 +23,66 @@
         <div class="d-flex navbar-content justify-content-between">
             <a class="navbar-brand" href="index.html">
                 <img src="/img/slsu-cherm-logo.png" class="logo-pic" alt="Logo of SLSU CHERM">
-                <h3 class="logo-name">SLSU <br/> CHERM</h3>
+                <h3 class="logo-name">SLSU <br /> CHERM</h3>
             </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#navModal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav text-white">
                     <li class="nav-item">
-                        <a class="nav-link" href="#Home">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="dropdown nav-item">
-                        <a class="dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="dropdown-toggle nav-link" onclick="goToAboutUs()" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             About Us
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Objectives</a>
-                            <a class="dropdown-item" href="#">Achievements</a>
-                            <a class="dropdown-item" href="#">Cherm Employees</a>
+                            <a class="dropdown-item" href="objectives.html">Objectives</a>
+                            <a class="dropdown-item" href="achievement.html">Achievements</a>
+                            <a class="dropdown-item" href="events.html">Events and Updates</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Services">Services</a>
+                        <a class="nav-link" href="services.html">Services</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="navModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-body">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" onclick="goToAboutUs()" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                 About Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="objectives.html">Objectives</a></li>
+                                <li><a class="dropdown-item" href="achievement.html">Achievements</a></li>
+                                <li><a class="dropdown-item" href="events.html">Events and Updates</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- LIST OF SERVICES -->
     <section id="services">
@@ -240,36 +275,48 @@
     <br>
 
     <footer>
-      <div class="d-flex p-4 footer">
-          <div class="cherm">
-              <img src="/img/slsu-cherm-logo.png" class="cherm-logo">
-              <p class="text-center" style="font-size: 20px;">Southern Luzon State University</p>
-              <p class="text-center" style="font-size: 30px;">Center for Hazard and <br>Environmental Resource
-                  Mapping<br>(CHERM)</p>
-          </div>
-          <div class="p-5 contact-us">
-              <p>Contact Us:</p>
-              <div class="facebook">
-                  <img src="/img/facebook.png" class="icon">
-                  <p>SLSU Center for Hazard and Environmental<br> Resource Mapping - CHERM</p>
-              </div>
+        <div class="d-flex p-4 footer">
+            <div class="col-1">
+                <div class="bagong-pilipinas">
+                    <img src="/img/Hi-Res-BAGONG-PILIPINAS-LOGO-1474x1536.png" class="bagong-pilipinas-logo">
+                    <p class="text-center" style="font-size: 20px; font-weight: bold; color: white;">REPUBLIC OF THE PHILIPPINES</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cherm">
+                    <img src="/img/slsu-cherm-logo.png" class="cherm-logo">
+                    <p class="text-center" style="font-size: 20px;">Southern Luzon State University</p>
+                    <p class="text-center" style="font-size: 30px;">Center for Hazard and <br>Environmental Resource
+                        Mapping<br>(CHERM)</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-5 contact-us">
+                    <p>Contact Us:</p>
+                    <div class="facebook">
+                        <img src="/img/facebook.png" class="icon">
+                        <p>SLSU Center for Hazard and Environmental<br> Resource Mapping - CHERM</p>
+                    </div>
 
-              <div class="gmail">
-                  <img src="/img/gmail.png" class="icon">
-                  <p>cherm4a@slsu.edu.ph</p>
-              </div>
-              <div class="address">
-                  <p style="text-transform: uppercase;">Address:</p>
-                  <p>2F DOST-PSTC Quezon, SLSU Lucena Campus, Ibabang Dupay</p>
-              </div>
-          </div>
-
-          <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.1698134828434!2d121.62914570000001!3d13.9484925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd4b5adf90d2e9%3A0xfdc797625c9f5ab1!2sDepartment%20of%20Science%20and%20Technology%20(DOST)%20-%20Quezon%20S%20and%20T%20Center!5e0!3m2!1sen!2sph!4v1742370723029!5m2!1sen!2sph"
-              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-  </footer>
+                    <div class="gmail">
+                        <img src="/img/gmail.png" class="icon">
+                        <p>cherm4a@slsu.edu.ph</p>
+                    </div>
+                    <div class="address">
+                        <p style="text-transform: uppercase;">Address:</p>
+                        <p>2F DOST-PSTC Quezon, SLSU Lucena Campus, Ibabang Dupay</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.1698134828434!2d121.62914570000001!3d13.9484925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd4b5adf90d2e9%3A0xfdc797625c9f5ab1!2sDepartment%20of%20Science%20and%20Technology%20(DOST)%20-%20Quezon%20S%20and%20T%20Center!5e0!3m2!1sen!2sph!4v1742370723029!5m2!1sen!2sph"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+    
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <!-- Popper.js (necessary for Bootstrap's dropdowns) -->
@@ -278,6 +325,11 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
       <script>
+        function goToAboutUs() {
+            window.location.href = "index.html#what-is-cherm";
+            sessionStorage.setItem("scrollToWhatIsCherm", "true"); // Store flag in sessionStorage
+        }
+        
         function openModal1() {
         document.getElementById('serviceModal1').style.display = 'block';
         }

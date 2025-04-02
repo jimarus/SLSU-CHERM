@@ -22,31 +22,66 @@
         <div class="d-flex navbar-content justify-content-between">
             <a class="navbar-brand" href="index.html">
                 <img src="/img/slsu-cherm-logo.png" class="logo-pic" alt="Logo of SLSU CHERM">
-                <h3 class="logo-name">SLSU <br/> CHERM</h3>
+                <h3 class="logo-name">SLSU <br /> CHERM</h3>
             </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#navModal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav text-white">
                     <li class="nav-item">
-                        <a class="nav-link" href="#Home">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="dropdown nav-item">
-                        <a class="dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="dropdown-toggle nav-link" onclick="goToAboutUs()" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             About Us
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Objectives</a>
-                            <a class="dropdown-item" href="#">Achievements</a>
-                            <a class="dropdown-item" href="#">Cherm Employees</a>
+                            <a class="dropdown-item" href="objectives.html">Objectives</a>
+                            <a class="dropdown-item" href="achievement.html">Achievements</a>
+                            <a class="dropdown-item" href="events.html">Events and Updates</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Services">Services</a>
+                        <a class="nav-link" href="services.html">Services</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="navModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-body">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" onclick="goToAboutUs()" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                 About Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="objectives.html">Objectives</a></li>
+                                <li><a class="dropdown-item" href="achievement.html">Achievements</a></li>
+                                <li><a class="dropdown-item" href="events.html">Events and Updates</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- LIST OF OBJECTIVES -->
     <section id="objectives">
@@ -128,6 +163,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
         <!-- Bootstrap JS -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function goToAboutUs() {
+            window.location.href = "index.html#what-is-cherm";
+            sessionStorage.setItem("scrollToWhatIsCherm", "true"); // Store flag in sessionStorage
+        }
+    </script>
 
     </body>
 </html>
