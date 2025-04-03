@@ -33,7 +33,7 @@
                         <a class="nav-link" href="#Home">Home</a>
                     </li>
                     <li class="dropdown nav-item">
-                        <a class="dropdown-toggle nav-link" href="#what-is-cherm" id="navbarDropdown" role="button"
+                        <a class="dropdown-toggle nav-link" href="index.html#what-is-cherm" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             About Us
                         </a>
@@ -62,7 +62,7 @@
                             <a class="nav-link" href="#Home">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#whar-is-cherm" id="aboutDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 About Us
                             </a>
@@ -147,7 +147,7 @@
                         management,
                         and
                         other developmental concern, whether custom printed or downloadable data.</p>
-                    <button>Read More</button>
+                    <button onclick="gotoObjectives()">Read More</button>
                 </div>
 
                 <div class="cherm-img">
@@ -249,7 +249,7 @@
                 <h4 class="text-center">SOUTHERN LUZON STATE <br> UNIVERSITY</h4>
             </div>
             <div class="dost_logo">
-                <img src="/img/dost-logo.png" style="padding: 0px 150px 0px 150px; max-width: 450px;" class="dost mb-1">
+                <img src="/img/dost-logo.png" style="padding: 0px 150px 0px 150px; max-width: 435px;" class="dost mb-1">
                 <h4 class="text-center mt-1">DEPARTMENT OF SCIENCE <br> AND TECHNOLOGY</h4>
             </div>
             <div class="ors_logo">
@@ -319,6 +319,27 @@
             if (window.location.hash !== '#what-is-cherm') {
                 event.preventDefault();
                 document.querySelector('#what-is-cherm').scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+
+        function gotoObjectives() {
+            window.location.href = "objectives.html";
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            if (sessionStorage.getItem("scrollToWhatIsCherm") === "true") {
+                sessionStorage.removeItem("scrollToWhatIsCherm"); 
+                
+                let target = document.getElementById("what-is-cherm");
+                if (target) {
+
+                    setTimeout(() => {
+                        target.scrollIntoView({ 
+                            behavior: "smooth", 
+                            block: "start" 
+                        });
+                    }, 500);
+                }
             }
         });
 
