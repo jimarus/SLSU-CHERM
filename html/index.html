@@ -147,7 +147,7 @@
                         management,
                         and
                         other developmental concern, whether custom printed or downloadable data.</p>
-                    <button onclick="goObjectives">Read More</button>
+                    <button onclick="gotoObjectives()">Read More</button>
                 </div>
 
                 <div class="cherm-img">
@@ -321,6 +321,10 @@
                 document.querySelector('#what-is-cherm').scrollIntoView({ behavior: 'smooth' });
             }
         });
+
+        function gotoObjectives() {
+            window.location.href = "objectives.html";
+        }
 
         document.addEventListener("DOMContentLoaded", function () {
             if (sessionStorage.getItem("scrollToWhatIsCherm") === "true") {
