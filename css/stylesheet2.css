@@ -45,7 +45,7 @@
     display: block;
     height: 0.4vh;
     width: 100%;
-    background-color: #08ca97b3;
+    background-color: #0B5B2C;
     margin-bottom: 1vh;
 }
 .guidelines {
@@ -67,7 +67,7 @@
     color: #414141;
 }
   .btn-close-modal {
-    background-color: #08CA97;
+    background-color: #0a4e26e8;
     color: white;
     border: none;
     padding: 1vh;
@@ -79,7 +79,7 @@
     width: auto;
 }
 .btn-close-modal:hover {
-    background-color: #06a57a;
+    background-color: #0e6833e8;
 }
 .line-modal {
     display: block;
