@@ -61,14 +61,13 @@
                 <div class="modal-body">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="#Home">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" onclick="goToAboutUs()" id="aboutDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                 About Us
+                            <a class="nav-link dropdown-toggle" id="aboutUsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
                                 <li><a class="dropdown-item" href="objectives.html">Objectives</a></li>
                                 <li><a class="dropdown-item" href="achievement.html">Achievements</a></li>
                                 <li><a class="dropdown-item" href="events.html">Events and Updates</a></li>
@@ -78,6 +77,7 @@
                             <a class="nav-link" href="services.html">Services</a>
                         </li>
                     </ul>
+                    <!-- The .achieve-btn buttons will be dynamically appended here -->
                 </div>
             </div>
         </div>
@@ -91,13 +91,12 @@
                 <button class="mapping">Geomapping</button>
                 <button class="training">Geospatial Cability Enhancement Center</button>
                 <button class="research">Technology Driven Research and Development Provider</button>
-                <button class="arrow-btn" onclick="backAchieve()">
+                <button class="arrow-btn" id="backButton" onclick="backAchieve(event)">
                     <img src="/img/leftarrow.png" alt="Arrow to Left">Back
-                </button>                
+                </button>               
                 <div class="ach-images">
-                <img src="/img/obj-1.png" alt="Photo">
-                <img src="/img/obj-2.png" alt="Photo">
-                <img src="/img/obj-3.png" alt="Photo">
+                <!-- <img src="/img/obj-1.png" alt="Photo">
+                <img src="/img/obj-2.png" alt="Photo"> -->
             </div>
             </div>
             
@@ -291,6 +290,35 @@
 
         // Call the function on page load to handle initial state
         document.addEventListener('DOMContentLoaded', handleResize);
+
+        // BUTTONS IN THE NAV MODAL
+        document.addEventListener("DOMContentLoaded", function () {
+        const achieveBtnContainer = document.querySelector(".achieve-btn"); // Select the .achieve-btn container
+        const modalBody = document.querySelector("#navModal .modal-body"); // Select the modal body
+        const originalParent = achieveBtnContainer.parentElement; // Store the original parent of .achieve-btn
+
+        function moveAchieveButtons() {
+            if (window.innerWidth <= 767) {
+                // Move .achieve-btn to the modal for small devices
+                if (!modalBody.contains(achieveBtnContainer)) {
+                    modalBody.appendChild(achieveBtnContainer);
+                    console.log("Buttons moved to modal for small devices.");
+                }
+            } else {
+                // Move .achieve-btn back to its original position for larger devices
+                if (!originalParent.contains(achieveBtnContainer)) {
+                    originalParent.insertBefore(achieveBtnContainer, originalParent.firstChild);
+                    console.log("Buttons moved back to original position.");
+                }
+            }
+        }
+
+        // Run the function on page load and on window resize
+        moveAchieveButtons();
+        window.addEventListener("resize", moveAchieveButtons);
+    });
+
+
     </script>
 
     <script>

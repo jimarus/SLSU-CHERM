@@ -797,7 +797,7 @@ iframe {
         display: grid;
         justify-items: center;
         gap: 0vh;
-        margin-top: 5vh;
+        margin-top: 7vh;
 }
 .ach-images img {
     width: 90%;
@@ -814,190 +814,175 @@ iframe {
 
 }
 /* Responsive styles */
-@media (max-width: 1200px) {
-    #achievements {
-        padding: 10% 8%;
-    }
-    #achievements .title {
-        font-size: 3.3rem;
-    } 
-    #achieve {
-        height: 100%;
-        max-height: 835px;
-    }
-    .achieve-con img {
-        width: 100%;
-        max-width: 223px;
-    }  
-    .achieve-btn {
-        align-items: center;
-    }
-    .achieve-btn button {
-        width: 100%;
-        max-width: 255px;
-        font-size: 1rem;
-    }
-    .achieve-con {
-        padding: 30px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .achieve-con img {
-        width: 100%;
-        max-width: 223px;
-    }
-    .achieve-img {
-        width: 90%;
-        max-width: 300px;
-    }
-    .achievement-det h2 {
-        font-size: 1.1rem;
-        text-align: start;
-    }
-    .achievement-det p {
-        text-align: justify;
-    }
-    .ach-images img {
-        width: 100%;
-        max-width: 260px;
-    }
-}
-@media (max-width: 992px) {
-    #achievements {
-        padding: 12% 10%;
-    }
-    #achievements .title {
-        font-size: 3.5rem;
-    }    
-    #achieve {
-        height: 100%;
-        max-height: 705px;
+/* Extra small devices (phones ≤ 480px or ≤ 576px) */
+@media (max-width: 576px) {
+    .con-achievement {
+        grid-template-columns: 1fr;
     }
     .achieve-btn {
+        width: 100%;
         align-items: center;
     }
-    .achieve-btn button {
-        width: 100%;
-        max-width: 255px;
-    }
-    .ach-images img {
-        width: 100%;
-        max-width: 250px;
-    }
-    .list-achieve {
-        width: 100%;
+    #achieve {
+        transform: translateX(0);
+        margin-top: 4%;
+        padding: 4%;
     }
     .achieve-con {
-        padding: 30px;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .achieve-con img {
-        width: 100%;
-        max-width: 223px;
+        gap: 2vh;
+        padding: 2vh;
     }
     .achieve-img {
-        width: 90%;
-        max-width: 300px;
+        width: 100%;
+        max-width: 100%;
     }
-    .achievement-det {
-        padding: 10px;
+    .list-achieve span {
+        width: 100%;
     }
-    .achievement-det h2 {
-        font-size: 1.1rem;
-        text-align: start;
-    }
-    .achievement-det p {
-        text-align: justify;
-    }
+    
 }
 
-@media (max-width: 892px) {
-    #achievements {
-        padding: 15% 7%;
-    }
-    .achieve-btn button {
-        width: 100%;
-        max-width: 300px;
+/* Small devices*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .con-achievement {
+        grid-template-columns: 1fr;
     }
     .achieve-btn {
-        align-items: start;
-    }
-    .achieve-btn button {
         width: 100%;
-        max-width: 203px;
-        height: 70px !important;
-        font-size: 1rem;
-        padding: 4px 6px;
+        align-items: center;
     }
-    .ach-images {
+    #achieve {
+        transform: translateX(0);
+        margin-top: 3%;
+        padding: 3%;
+    }
+    .achieve-con {
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .achieve-img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .list-achieve span {
+        width: 100%;
+    }
+
+    .achieve-btn {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        gap: 10px;
+        padding: 10px;
     }
-    .ach-images img {
+    .achieve-btn button {
         width: 100%;
-        max-width: 205px;
+        max-width: none;
     }
-    #achievements .title {
-        font-size: 3rem;
-    }    
-    .list-achieve {
-        width: 100%;
-    }
-    .achieve-con {
+    #navModal .achieve-btn {
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        gap: 10px;
+        padding: 10px;
     }
-    .achieve-img {
-        width: 90%;
-        max-width: 300px;
+    #navModal .achieve-btn button {
+        background-color: #0b5b2cd0;
+        color: #fdfdfd;
+        border: none;
+        text-align: left;
+        max-height: 60px;
+        padding: 0% 5%;
+        font-size: 1.3rem;
+        width: 97%;
+        display: block;
+        /* border-radius: 5px; */
+        cursor: pointer;
+    }
+    #navModal .achieve-btn button:hover {
+        background-color: #148141c0 !important;
+        color: white !important;
+    }
+}
+
+/* Medium devices*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .con-achievement {
+        grid-template-columns: 1fr 1.5fr;
+    }
+    .achieve-btn {
+        width: 100%;
+        align-items: start;
     }
     #achieve {
-        height: 100%;
-        max-height: 916px;
-        transform: translateX(-52px);
-        width: 119%;
-        max-width: 505px;
-        transform: translateX(-93px);
+        transform: translateX(-15px);
+        margin-top: 2%;
+        padding: 2%;
     }
-    .achievement-det {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 576px) {
-    .achieve-btn button {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .ach-images img {
-        max-width: 100px;
-    }
-
     .achieve-img {
-        max-width: 200px;
+        width: 40%;
     }
-
-    .achievement-det h2 {
-        font-size: 18px;
-    }
-
-    .achievement-det p {
-        font-size: 14px;
+    .list-achieve span {
+        width: 100%;
     }
 }
 
+/* Large devices*/
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .con-achievement {
+        grid-template-columns: 1fr 2fr;
+    }
+    .achieve-img {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (desktops ≥ 1280px)*/
+@media (min-width: 1280px) {
+    .con-achievement {
+        grid-template-columns: 1fr 2fr;
+    }
+    
+}
+/* MEDIA QUERY FOR THE BUTTONS IN THE MODAL
+@media (min-width: 481px) and (max-width: 767px) {
+    .achieve-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    .achieve-btn button {
+        width: 100%;
+        max-width: none;
+    }
+    #navModal .achieve-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    #navModal .achieve-btn button {
+        background-color: #0b5b2cba;
+        color: #fdfdfd;
+        border: none;
+        text-align: left;
+        /* padding: 10px 15px;
+        font-size: 1.3rem;
+        width: 97%;
+        display: block;
+        /* border-radius: 5px; 
+        cursor: pointer;
+    }
+    #navModal .achieve-btn button:hover {
+        background-color: #17753e !important;
+        color: white !important;
+    }
+} */
 
 /* SERVICES */
 #services {
     padding: 10% 18%;
 }
-
 #service {
     display: flex;
     flex-direction: column;
