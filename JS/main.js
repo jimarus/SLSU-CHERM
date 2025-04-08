@@ -80,40 +80,31 @@ setTimeout(function () {
 
 // Custom dropdown functionality
 // Show the dropdown when the trigger is hovered over
-const trigger = document.getElementById("navbarDropdown");
-const dropdown = document.getElementById("customDropdown");
-const toggleIcon = document.getElementById("dropdownToggleIcon");
+    const aboutUs = document.getElementById('navbarDropdown');
+    const dropdown = document.getElementById('customDropdown');
 
-let hoverTimeout;
-let dropdownVisible = false;
+    if (aboutUs && dropdown) {
+        aboutUs.addEventListener('mouseenter', () => {
+            dropdown.style.display = 'block';
+        });
 
-function showDropdown() {
-    clearTimeout(hoverTimeout);
-    dropdown.style.display = "block";
-    dropdownVisible = true;
-}
+        dropdown.addEventListener('mouseleave', () => {
+            dropdown.style.display = 'none';
+        });
 
-function hideDropdown() {
-    hoverTimeout = setTimeout(() => {
-        dropdown.style.display = "none";
-        dropdownVisible = false;
-    }, 300);
-}
+        dropdown.addEventListener('mouseenter', () => {
+            dropdown.style.display = 'block';
+        });
 
-// Hover behavior
-trigger.addEventListener("mouseenter", showDropdown);
-trigger.addEventListener("mouseleave", hideDropdown);
-dropdown.addEventListener("mouseenter", showDropdown);
-dropdown.addEventListener("mouseleave", hideDropdown);
-
-// Click toggle icon to manually toggle dropdown
-toggleIcon.addEventListener("click", () => {
-    if (dropdownVisible) {
-        dropdown.style.display = "none";
-        dropdownVisible = false;
-    } else {
-        showDropdown();
+        aboutUs.addEventListener('mouseleave', () => {
+            // Slight delay to let user move cursor to the dropdown
+            setTimeout(() => {
+                if (!dropdown.matches(':hover')) {
+                    dropdown.style.display = 'none';
+                }
+            }, 200);
+        });
     }
-});
+
 
 
