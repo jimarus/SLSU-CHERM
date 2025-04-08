@@ -61,14 +61,13 @@
                 <div class="modal-body">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="#Home">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" onclick="goToAboutUs()" id="aboutDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                 About Us
+                            <a class="nav-link dropdown-toggle" id="aboutUsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
                                 <li><a class="dropdown-item" href="objectives.html">Objectives</a></li>
                                 <li><a class="dropdown-item" href="achievement.html">Achievements</a></li>
                                 <li><a class="dropdown-item" href="events.html">Events and Updates</a></li>
@@ -78,6 +77,7 @@
                             <a class="nav-link" href="services.html">Services</a>
                         </li>
                     </ul>
+                    <!-- The .achieve-btn buttons will be dynamically appended here -->
                 </div>
             </div>
         </div>
@@ -86,20 +86,23 @@
     <!-- LIST OF ACHIEVEMENTS -->
     <section id="achievements">
         <h2 class="title">ACHIEVEMENTS</h2>
+        <div id="achieve-title" class="achieve-title">
+            <!-- Title will be dynamically updated here -->
+        </div>
         <div class="con-achievement">
             <div class="achieve-btn">                
                 <button class="mapping">Geomapping</button>
                 <button class="training">Geospatial Cability Enhancement Center</button>
                 <button class="research">Technology Driven Research and Development Provider</button>
-                <button class="arrow-btn" onclick="backAchieve()">
+                <button class="arrow-btn" id="backButton" onclick="backAchieve(event)">
                     <img src="/img/leftarrow.png" alt="Arrow to Left">Back
-                </button>                
+                </button>               
                 <div class="ach-images">
-                <img src="/img/obj-1.png" alt="Photo">
-                <img src="/img/obj-2.png" alt="Photo">
-                <img src="/img/obj-3.png" alt="Photo">
+                <!-- <img src="/img/obj-1.png" alt="Photo">
+                <img src="/img/obj-2.png" alt="Photo"> -->
             </div>
             </div>
+            
             
             <div id="achieve">
                 <div class="list-achieve">
@@ -291,195 +294,223 @@
 
         // Call the function on page load to handle initial state
         document.addEventListener('DOMContentLoaded', handleResize);
+
+        // BUTTONS IN THE NAV MODAL
+        document.addEventListener("DOMContentLoaded", function () {
+        const achieveBtnContainer = document.querySelector(".achieve-btn"); // Select the .achieve-btn container
+        const modalBody = document.querySelector("#navModal .modal-body"); // Select the modal body
+        const originalParent = achieveBtnContainer.parentElement; // Store the original parent of .achieve-btn
+
+        function moveAchieveButtons() {
+            if (window.innerWidth <= 767) {
+                // Move .achieve-btn to the modal for small devices
+                if (!modalBody.contains(achieveBtnContainer)) {
+                    modalBody.appendChild(achieveBtnContainer);
+                    console.log("Buttons moved to modal for small devices.");
+                }
+            } else {
+                // Move .achieve-btn back to its original position for larger devices
+                if (!originalParent.contains(achieveBtnContainer)) {
+                    originalParent.insertBefore(achieveBtnContainer, originalParent.firstChild);
+                    console.log("Buttons moved back to original position.");
+                }
+            }
+        }
+
+        // Run the function on page load and on window resize
+        moveAchieveButtons();
+        window.addEventListener("resize", moveAchieveButtons);
+    });
+
+
     </script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
     const achieveContainer = document.getElementById("achieve");
+    const achieveTitle = document.getElementById("achieve-title");
 
     // BUTTONS FOR ACHIEVEMENTS
     const achievements = {
-        mapping: `
-            <div class="list-achieve">
-                <div class="achieve-con">
-                    <img src="/img/mapping.jpg" class="achieve-img" alt="Mapping Achievement">
-                    <div class="achievement-det">
-                        <h2>Geomapping Initiative for Disaster Resilience</h2>
-                        <p class="setting">Various Locations <br> 2024</p>
-                        <p>The Geomapping Initiative enhances local resilience by mapping hazard-prone areas 
-                           and providing geospatial insights for disaster preparedness.</p>                      
-                    </div>  
+        mapping: {
+            title: "Geomapping",
+            content: `
+                <div class="list-achieve">
+                    <div class="achieve-con">
+                        <img src="/img/georisk-infanta.jpg" class="achieve-img" alt="Mapping Achievement">
+                        <div class="achievement-det">
+                            <h2>Geomapping Initiative for Disaster Resilience</h2>
+                            <p class="setting">Various Locations <br> 2024</p>
+                            <p>The Geomapping Initiative enhances local resilience by mapping hazard-prone areas 
+                               and providing geospatial insights for disaster preparedness.</p>                      
+                        </div>  
+                    </div>
+                    <span></span>
                 </div>
-                <span></span>
-            </div>
-            <div class="list-achieve">
-                <div class="achieve-con">
-                    <img src="/img/mapping.jpg" class="achieve-img" alt="Mapping Achievement">
-                    <div class="achievement-det">
-                        <h2>Geomapping Initiative for Disaster Resilience</h2>
-                        <p class="setting">Various Locations <br> 2024</p>
-                        <p>The Geomapping Initiative enhances local resilience by mapping hazard-prone areas 
-                           and providing geospatial insights for disaster preparedness.</p>                      
-                    </div>  
+                <div class="list-achieve">
+                    <div class="achieve-con">
+                        <img src="/img/georisk-infanta.jpg" class="achieve-img" alt="Mapping Achievement">
+                        <div class="achievement-det">
+                            <h2>Geomapping Initiative for Disaster Resilience</h2>
+                            <p class="setting">Various Locations <br> 2024</p>
+                            <p>The Geomapping Initiative enhances local resilience by mapping hazard-prone areas 
+                               and providing geospatial insights for disaster preparedness.</p>                      
+                        </div>  
+                    </div>
+                    <span></span>
                 </div>
-                <span></span>
-            </div>
-            <div class="list-achieve">
-                <div class="achieve-con">
-                    <img src="/img/mapping.jpg" class="achieve-img" alt="Mapping Achievement">
-                    <div class="achievement-det">
-                        <h2>Geomapping Initiative for Disaster Resilience</h2>
-                        <p class="setting">Various Locations <br> 2024</p>
-                        <p>The Geomapping Initiative enhances local resilience by mapping hazard-prone areas 
-                           and providing geospatial insights for disaster preparedness.</p>                      
-                    </div>  
+                <div class="list-achieve">
+                    <div class="achieve-con">
+                        <img src="/img/georisk-infanta.jpg" class="achieve-img" alt="Mapping Achievement">
+                        <div class="achievement-det">
+                            <h2>Geomapping Initiative for Disaster Resilience</h2>
+                            <p class="setting">Various Locations <br> 2024</p>
+                            <p>The Geomapping Initiative enhances local resilience by mapping hazard-prone areas 
+                               and providing geospatial insights for disaster preparedness.</p>                      
+                        </div>  
+                    </div>
+                    <span></span>
                 </div>
-                <span></span>
-            </div>
-            <div class="list-achieve">
-                <div class="achieve-con">
-                    <img src="/img/mapping.jpg" class="achieve-img" alt="Mapping Achievement">
-                    <div class="achievement-det">
-                        <h2>Geomapping Initiative for Disaster Resilience</h2>
-                        <p class="setting">Various Locations <br> 2024</p>
-                        <p>The Geomapping Initiative enhances local resilience by mapping hazard-prone areas 
-                           and providing geospatial insights for disaster preparedness.</p>                      
-                    </div>  
+                <div class="list-achieve">
+                    <div class="achieve-con">
+                        <img src="/img/georisk-infanta.jpg" class="achieve-img" alt="Mapping Achievement">
+                        <div class="achievement-det">
+                            <h2>Geomapping Initiative for Disaster Resilience</h2>
+                            <p class="setting">Various Locations <br> 2024</p>
+                            <p>The Geomapping Initiative enhances local resilience by mapping hazard-prone areas 
+                               and providing geospatial insights for disaster preparedness.</p>                      
+                        </div>  
+                    </div>
+                    <span></span>
                 </div>
-                <span></span>
-            </div>
-            <div class="list-achieve">
-                <div class="achieve-con">
-                    <img src="/img/mapping.jpg" class="achieve-img" alt="Mapping Achievement">
-                    <div class="achievement-det">
-                        <h2>Geomapping Initiative for Disaster Resilience</h2>
-                        <p class="setting">Various Locations <br> 2024</p>
-                        <p>The Geomapping Initiative enhances local resilience by mapping hazard-prone areas 
-                           and providing geospatial insights for disaster preparedness.</p>                      
-                    </div>  
+                <div class="list-achieve">
+                    <div class="achieve-con">
+                        <img src="/img/georisk-infanta.jpg" class="achieve-img" alt="Mapping Achievement">
+                        <div class="achievement-det">
+                            <h2>Geomapping Initiative for Disaster Resilience</h2>
+                            <p class="setting">Various Locations <br> 2024</p>
+                            <p>The Geomapping Initiative enhances local resilience by mapping hazard-prone areas 
+                               and providing geospatial insights for disaster preparedness.</p>                      
+                        </div>  
+                    </div>
+                    <span></span>
                 </div>
-                <span></span>
-            </div>
-        `,
-        training: `
-            <div class="list-achieve">
-                <div class="achieve-con">
-                    <img src="/img/training.jpg" class="achieve-img" alt="Training Achievement">
-                    <div class="achievement-det">
-                        <h2>Geospatial Capability Enhancement Training</h2>
-                        <p class="setting">SLSU Training Center <br> March 2025</p>
-                        <p>This program aims to enhance the technical capacity of professionals in geospatial 
-                           tools and remote sensing technologies for better decision-making.</p>                      
-                    </div>  
+            `
+        },
+        training: {
+            title: "Geospatial Capability Enhancement Training Center",
+            content: `
+                <div class="list-achieve">
+                    <div class="achieve-con">
+                        <img src="/img/training.jpg" class="achieve-img" alt="Training Achievement">
+                        <div class="achievement-det">
+                            <h2>Geospatial Capability Enhancement Training</h2>
+                            <p class="setting">SLSU Training Center <br> March 2025</p>
+                            <p>This program aims to enhance the technical capacity of professionals in geospatial 
+                               tools and remote sensing technologies for better decision-making.</p>                      
+                        </div>  
+                    </div>
+                    <span></span>
                 </div>
-                <span></span>
-            </div>
-            <div class="list-achieve">
-                <div class="achieve-con">
-                    <img src="/img/mapping.jpg" class="achieve-img" alt="Mapping Achievement">
-                    <div class="achievement-det">
-                        <h2>Geomapping Initiative for Disaster Resilience</h2>
-                        <p class="setting">Various Locations <br> 2024</p>
-                        <p>The Geomapping Initiative enhances local resilience by mapping hazard-prone areas 
-                           and providing geospatial insights for disaster preparedness.</p>                      
-                    </div>  
+                <div class="list-achieve">
+                    <div class="achieve-con">
+                        <img src="/img/training.jpg" class="achieve-img" alt="Training Achievement">
+                        <div class="achievement-det">
+                            <h2>Geospatial Capability Enhancement Training</h2>
+                            <p class="setting">SLSU Training Center <br> March 2025</p>
+                            <p>This program aims to enhance the technical capacity of professionals in geospatial 
+                               tools and remote sensing technologies for better decision-making.</p>                      
+                        </div>  
+                    </div>
+                    <span></span>
                 </div>
-                <span></span>
-            </div>
-            <div class="list-achieve">
-                <div class="achieve-con">
-                    <img src="/img/mapping.jpg" class="achieve-img" alt="Mapping Achievement">
-                    <div class="achievement-det">
-                        <h2>Geomapping Initiative for Disaster Resilience</h2>
-                        <p class="setting">Various Locations <br> 2024</p>
-                        <p>The Geomapping Initiative enhances local resilience by mapping hazard-prone areas 
-                           and providing geospatial insights for disaster preparedness.</p>                      
-                    </div>  
+                <div class="list-achieve">
+                    <div class="achieve-con">
+                        <img src="/img/training.jpg" class="achieve-img" alt="Training Achievement">
+                        <div class="achievement-det">
+                            <h2>Geospatial Capability Enhancement Training</h2>
+                            <p class="setting">SLSU Training Center <br> March 2025</p>
+                            <p>This program aims to enhance the technical capacity of professionals in geospatial 
+                               tools and remote sensing technologies for better decision-making.</p>                      
+                        </div>  
+                    </div>
+                    <span></span>
                 </div>
-                <span></span>
-            </div>
-            <div class="list-achieve">
-                <div class="achieve-con">
-                    <img src="/img/mapping.jpg" class="achieve-img" alt="Mapping Achievement">
-                    <div class="achievement-det">
-                        <h2>Geomapping Initiative for Disaster Resilience</h2>
-                        <p class="setting">Various Locations <br> 2024</p>
-                        <p>The Geomapping Initiative enhances local resilience by mapping hazard-prone areas 
-                           and providing geospatial insights for disaster preparedness.</p>                      
-                    </div>  
+                <div class="list-achieve">
+                    <div class="achieve-con">
+                        <img src="/img/training.jpg" class="achieve-img" alt="Training Achievement">
+                        <div class="achievement-det">
+                            <h2>Geospatial Capability Enhancement Training</h2>
+                            <p class="setting">SLSU Training Center <br> March 2025</p>
+                            <p>This program aims to enhance the technical capacity of professionals in geospatial 
+                               tools and remote sensing technologies for better decision-making.</p>                      
+                        </div>  
+                    </div>
+                    <span></span>
                 </div>
-                <span></span>
-            </div>
-        `,
-        research: `
-            <div class="list-achieve">
-                <div class="achieve-con">
-                    <img src="/img/research.jpg" class="achieve-img" alt="Research Achievement">
-                    <div class="achievement-det">
-                        <h2>Technology-Driven Research and Development</h2>
-                        <p class="setting">Innovation Hub <br> 2025</p>
-                        <p>The R&D program leverages advanced geospatial analytics to develop innovative 
-                           solutions in environmental monitoring and risk assessment.</p>                      
-                    </div>  
+            `
+        },
+        research: {
+            title: "Technology Driven Research and Development Provider",
+            content: `
+                <div class="list-achieve">
+                    <div class="achieve-con">
+                        <img src="/img/research.jpg" class="achieve-img" alt="Research Achievement">
+                        <div class="achievement-det">
+                            <h2>Technology-Driven Research and Development</h2>
+                            <p class="setting">Innovation Hub <br> 2025</p>
+                            <p>The R&D program leverages advanced geospatial analytics to develop innovative 
+                               solutions in environmental monitoring and risk assessment.</p>                      
+                        </div>  
+                    </div>
+                    <span></span>
                 </div>
-                <span></span>
-            </div>
-            <div class="list-achieve">
-                <div class="achieve-con">
-                    <img src="/img/mapping.jpg" class="achieve-img" alt="Mapping Achievement">
-                    <div class="achievement-det">
-                        <h2>Geomapping Initiative for Disaster Resilience</h2>
-                        <p class="setting">Various Locations <br> 2024</p>
-                        <p>The Geomapping Initiative enhances local resilience by mapping hazard-prone areas 
-                           and providing geospatial insights for disaster preparedness.</p>                      
-                    </div>  
+                <div class="list-achieve">
+                    <div class="achieve-con">
+                        <img src="/img/research.jpg" class="achieve-img" alt="Research Achievement">
+                        <div class="achievement-det">
+                            <h2>Technology-Driven Research and Development</h2>
+                            <p class="setting">Innovation Hub <br> 2025</p>
+                            <p>The R&D program leverages advanced geospatial analytics to develop innovative 
+                               solutions in environmental monitoring and risk assessment.</p>                      
+                        </div>  
+                    </div>
+                    <span></span>
                 </div>
-                <span></span>
-            </div>
-            <div class="list-achieve">
-                <div class="achieve-con">
-                    <img src="/img/mapping.jpg" class="achieve-img" alt="Mapping Achievement">
-                    <div class="achievement-det">
-                        <h2>Geomapping Initiative for Disaster Resilience</h2>
-                        <p class="setting">Various Locations <br> 2024</p>
-                        <p>The Geomapping Initiative enhances local resilience by mapping hazard-prone areas 
-                           and providing geospatial insights for disaster preparedness.</p>                      
-                    </div>  
+                <div class="list-achieve">
+                    <div class="achieve-con">
+                        <img src="/img/research.jpg" class="achieve-img" alt="Research Achievement">
+                        <div class="achievement-det">
+                            <h2>Technology-Driven Research and Development</h2>
+                            <p class="setting">Innovation Hub <br> 2025</p>
+                            <p>The R&D program leverages advanced geospatial analytics to develop innovative 
+                               solutions in environmental monitoring and risk assessment.</p>                      
+                        </div>  
+                    </div>
+                    <span></span>
                 </div>
-                <span></span>
-            </div>
-            <div class="list-achieve">
-                <div class="achieve-con">
-                    <img src="/img/mapping.jpg" class="achieve-img" alt="Mapping Achievement">
-                    <div class="achievement-det">
-                        <h2>Geomapping Initiative for Disaster Resilience</h2>
-                        <p class="setting">Various Locations <br> 2024</p>
-                        <p>The Geomapping Initiative enhances local resilience by mapping hazard-prone areas 
-                           and providing geospatial insights for disaster preparedness.</p>                      
-                    </div>  
-                </div>
-                <span></span>
-            </div>
-        `,
+            `
+        }
     };
 
-        // Function to update the content in #achieve
-        function updateAchievement(category) {
-            achieveContainer.innerHTML = achievements[category];
-        }
+    // Function to update the content and title in #achieve
+    function updateAchievement(category) {
+        achieveTitle.textContent = achievements[category].title; // Update the title
+        achieveContainer.innerHTML = achievements[category].content; // Update the content
+    }
 
-        document.querySelector(".mapping").addEventListener("click", function () {
-            updateAchievement("mapping");
-        });
-
-        document.querySelector(".training").addEventListener("click", function () {
-            updateAchievement("training");
-        });
-
-        document.querySelector(".research").addEventListener("click", function () {
-            updateAchievement("research");
-        });
+    document.querySelector(".mapping").addEventListener("click", function () {
+        updateAchievement("mapping");
     });
+
+    document.querySelector(".training").addEventListener("click", function () {
+        updateAchievement("training");
+    });
+
+    document.querySelector(".research").addEventListener("click", function () {
+        updateAchievement("research");
+    });
+});
 
     </script>
 
