@@ -1012,11 +1012,9 @@ body {
     padding-bottom: 7rem;
 }
 
-<<<<<<< HEAD
 /*--------------------------------------------------------------
 #   Footer Section
 --------------------------------------------------------------*/
-=======
 
 .footer {
     background-repeat: repeat;
@@ -1242,7 +1240,6 @@ iframe {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 55px;
 }
-
 .title {
     color: #118ab2;
     font-size: 50px;
@@ -1252,10 +1249,6 @@ iframe {
 }
 
 .event-img {
-    /* width: 35vh;
-    height: 30vh;
-    margin-bottom: 6%; */
-
     width: 100%;
     height: 28vh;
     margin-bottom: 6%;
@@ -1612,8 +1605,6 @@ iframe {
     width: 3vh;
     height: 3vh;
     margin-right: 1vh;
-    cursor: pointer;
-
 }
 #achieve-title {
     font-size: 2rem; 
@@ -2349,7 +2340,6 @@ iframe {
     height: 3vh;
     margin-right: 1vh;
     cursor: pointer;
-
 }
 
 /*--------------------------------------------------------------
