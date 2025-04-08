@@ -14,11 +14,11 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    
+
 </head>
 
 <body>
-    <!-- NAVIGATION BAR -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light shadow-lg">
         <div class="d-flex navbar-content justify-content-between">
             <a class="navbar-brand" href="index.html">
@@ -33,50 +33,73 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav text-white">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="dropdown nav-item">
-                        <a class="dropdown-toggle nav-link" onclick="goToAboutUs()" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            About Us
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="objectives.html">Objectives</a>
-                            <a class="dropdown-item" href="achievement.html">Achievements</a>
-                            <a class="dropdown-item" href="events.html">Events and Updates</a>
-                        </div>
+                        <a class="nav-link" href="#Home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="" id="navbarDropdown" onclick="goToAboutUs()">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-us" onclick="goToContactUs()">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="custom-dropdown-menu" id="customDropdown">
+        <div class="dropdown-menu-container">
+            <div class="slsu-cherm-partnership">
+                <div class="slsu">
+                    <img src="/img/slsu-logo.png" class="slsu">
+                </div>
+                <div class="dost-calabarzon">
+                    <img src="/img/dost-logo.png" class="dost">
+                </div>
+                <div class="slsu-office-of-research-services">
+                    <img src="/img/slsu-research-logo.png" class="ors">
+                </div>
+            </div>
+            <div class="dropdown-link-container">
+                <div class="dropdown-link">
+                    <a class="dropdown-item" href="objectives.html">Objectives</a>
+                    <a class="dropdown-item" href="achievement.html">Achievements</a>
+                    <a class="dropdown-item" href="events.html">Events and Updates</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal -->
     <div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="navModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div data-bs-theme="dark">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
             <div class="modal-content">
                 <div class="modal-body">
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link" href="#Home">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" onclick="goToAboutUs()" id="aboutDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                 About Us
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                                <li><a class="dropdown-item" href="objectives.html">Objectives</a></li>
-                                <li><a class="dropdown-item" href="achievement.html">Achievements</a></li>
-                                <li><a class="dropdown-item" href="events.html">Events and Updates</a></li>
-                            </ul>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <li><a class="nav-link" href="objectives.html">Objectives</a></li>
+                        </li>
+                        <li class="nav-item">
+                        <li><a class="nav-link" href="achievement.html">Achievements</a></li>
+                        </li>
+                        <li class="nav-item">
+                        <li><a class="nav-link" href="events.html">Events and Updates</a></li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-us">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -86,7 +109,7 @@
 
     <!-- LIST OF EVENTS -->
     <section id="events">
-        <h2 class="title" >UPDATES AND EVENTS</h2>
+        <h2 class="title">UPDATES AND EVENTS</h2>
         <div id="update-events">
             <div class="list-ev">
                 <div class="event-con">
@@ -97,7 +120,7 @@
                           enhance disaster resilience through the Resilient Local Government System Scorecard (RLGSS) program. 
                           Supported by the SHIELD Program, this initiative aims to improve local disaster preparedness and climate risk management.</p>
                       <span></span>
-                      <p><i>Queen Margarette Hotel, Domoit, Lucena City <br> February 26-28, 2025</i></p>
+                      <p>Queen Margarette Hotel, Domoit, Lucena City <br> February 26-28, 2025</p>
                     </div>  
                 </div>
             </div>
@@ -111,7 +134,7 @@
                       Platforms in assessing hazards and exposures for various stakeholders last October 10 at Southern 
                       Luzon State University Main Campus. </p>
                     <span></span>
-                    <p><i>Southern Luzon State University - Main Campus <br> October 10, 2024</i></p>
+                    <p>Southern Luzon State University - Main Campus <br> October 10, 2024</p>
                   </div>  
               </div>
           </div>
@@ -126,7 +149,7 @@
                      The team also learned about our exercises and the value of active community participation in these
                       initiatives.</p>
                   <span></span>
-                  <p><i>CHERM Training Room, SLSU Lucena Campus <br> November 12, 2024</i></p>
+                  <p>CHERM Training Room, SLSU Lucena Campus <br> November 12, 2024</p>
                 </div>  
             </div>
         </div>
@@ -140,7 +163,7 @@
                    services, community engagement, and internal processes. The team also welcomed new 
                    interns who will support ongoing projects and various tasks within the center.   </p>
                 <span></span>
-                <p><i>CHERM Training Room, SLSU Lucena Campus <br> March 13, 2025</i></p>
+                <p>CHERM Training Room, SLSU Lucena Campus <br> March 13, 2025</p>
               </div>  
           </div>
       </div>
@@ -158,7 +181,7 @@
                  and reinforced its commitment to supporting LGUs in hazard mapping, exposure data collection, 
                  and risk analysis.</p>
               <span></span>
-              <p><i>Quezon Province <br> December 10-11, 2024</i></p>
+              <p>Quezon Province <br> December 10-11, 2024</p>
             </div>  
         </div>
     </div>
@@ -174,12 +197,12 @@
               and bridging leadership, and support Quezon Province's advocacy for safe and 
               climate-resilient communities.</p>
             <span></span>
-            <p><i>MI Sevilla’s Resort, Brgy. Domoit, Lucena City <br> November 26-28, 2024</i></p>
+            <p>MI Sevilla’s Resort, Brgy. Domoit, Lucena City <br> November 26-28, 2024</p>
           </div>  
       </div>
   </div>
 
-        </div>  
+        </div>
 
     </section>
     <br>
@@ -191,15 +214,13 @@
     <br>
     <br>
 
-    <footer>
-        <div class="d-flex p-4 footer">
-            <div class="col-1">
-                <div class="bagong-pilipinas">
-                    <img src="/img/Hi-Res-BAGONG-PILIPINAS-LOGO-1474x1536.png" class="bagong-pilipinas-logo">
-                    <p class="text-center" style="font-size: 20px; font-weight: bold; color: white;">REPUBLIC OF THE PHILIPPINES</p>
-                </div>
+    <!--Footer-->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="bagong-pilipinas">
+                <img src="/img/Hi-Res-BAGONG-PILIPINAS-LOGO-1474x1536.png" class="bagong-pilipinas-logo">
             </div>
-            <div class="col-md-4">
+            <div class="footer-col">
                 <div class="cherm">
                     <img src="/img/slsu-cherm-logo.png" class="cherm-logo">
                     <p class="text-center" style="font-size: 20px;">Southern Luzon State University</p>
@@ -207,12 +228,12 @@
                         Mapping<br>(CHERM)</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="p-5 contact-us">
+            <div class="footer-col">
+                <div class="p-5 contact-us" id="contact-us">
                     <p>Contact Us:</p>
                     <div class="facebook">
                         <img src="/img/facebook.png" class="icon">
-                        <p>SLSU Center for Hazard and Environmental<br> Resource Mapping - CHERM</p>
+                        <p>SLSU Center for Hazard and Environmental Resource Mapping(CHERM)</p>
                     </div>
 
                     <div class="gmail">
@@ -225,28 +246,63 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.1698134828434!2d121.62914570000001!3d13.9484925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd4b5adf90d2e9%3A0xfdc797625c9f5ab1!2sDepartment%20of%20Science%20and%20Technology%20(DOST)%20-%20Quezon%20S%20and%20T%20Center!5e0!3m2!1sen!2sph!4v1742370723029!5m2!1sen!2sph"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="footer-col">
+                <div class="map">
+                    <iframe class="map-frame"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.1698134828434!2d121.62914570000001!3d13.9484925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd4b5adf90d2e9%3A0xfdc797625c9f5ab1!2sDepartment%20of%20Science%20and%20Technology%20(DOST)%20-%20Quezon%20S%20and%20T%20Center!5e0!3m2!1sen!2sph!4v1742370723029!5m2!1sen!2sph"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </footer>
-    
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <!-- Popper.js (necessary for Bootstrap's dropdowns) -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
-      <!-- Bootstrap JS -->
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Popper.js (necessary for Bootstrap's dropdowns) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script>
         function goToAboutUs() {
             window.location.href = "index.html#what-is-cherm";
             sessionStorage.setItem("scrollToWhatIsCherm", "true"); // Store flag in sessionStorage
         }
+
+        const aboutUs = document.getElementById('navbarDropdown');
+        const dropdown = document.getElementById('customDropdown');
+
+        if (aboutUs && dropdown) {
+            // Show on hover
+            aboutUs.addEventListener('mouseenter', () => {
+                dropdown.style.display = 'block';
+            });
+
+            aboutUs.addEventListener('mouseleave', () => {
+                setTimeout(() => {
+                    if (!dropdown.matches(':hover')) {
+                        dropdown.style.display = 'none';
+                    }
+                }, 200);
+            });
+
+            dropdown.addEventListener('mouseenter', () => {
+                dropdown.style.display = 'block';
+            });
+
+            dropdown.addEventListener('mouseleave', () => {
+                dropdown.style.display = 'none';
+            });
+
+            // Show on click too
+            aboutUs.addEventListener('click', (e) => {
+                e.preventDefault(); // prevent link jump
+                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+            });
+        }
     </script>
 
-    </body>
+</body>
+
 </html>

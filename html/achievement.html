@@ -14,11 +14,12 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    
+
 </head>
 
 <body>
-    <!-- NAVIGATION BAR -->
+
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light shadow-lg">
         <div class="d-flex navbar-content justify-content-between">
             <a class="navbar-brand" href="index.html">
@@ -33,52 +34,75 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav text-white">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="dropdown nav-item">
-                        <a class="dropdown-toggle nav-link" onclick="goToAboutUs()" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            About Us
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="objectives.html">Objectives</a>
-                            <a class="dropdown-item" href="achievement.html">Achievements</a>
-                            <a class="dropdown-item" href="events.html">Events and Updates</a>
-                        </div>
+                        <a class="nav-link" href="#Home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="" id="navbarDropdown" onclick="goToAboutUs()">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-us" onclick="goToContactUs()">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="custom-dropdown-menu" id="customDropdown">
+        <div class="dropdown-menu-container">
+            <div class="slsu-cherm-partnership">
+                <div class="slsu">
+                    <img src="/img/slsu-logo.png" class="slsu">
+                </div>
+                <div class="dost-calabarzon">
+                    <img src="/img/dost-logo.png" class="dost">
+                </div>
+                <div class="slsu-office-of-research-services">
+                    <img src="/img/slsu-research-logo.png" class="ors">
+                </div>
+            </div>
+            <div class="dropdown-link-container">
+                <div class="dropdown-link">
+                    <a class="dropdown-item" href="objectives.html">Objectives</a>
+                    <a class="dropdown-item" href="achievement.html">Achievements</a>
+                    <a class="dropdown-item" href="events.html">Events and Updates</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal -->
     <div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="navModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div data-bs-theme="dark">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
             <div class="modal-content">
                 <div class="modal-body">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="aboutUsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                About Us
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
-                                <li><a class="dropdown-item" href="objectives.html">Objectives</a></li>
-                                <li><a class="dropdown-item" href="achievement.html">Achievements</a></li>
-                                <li><a class="dropdown-item" href="events.html">Events and Updates</a></li>
-                            </ul>
+                            <a class="nav-link" href="#Home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="services.html">Services</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <li><a class="nav-link" href="objectives.html">Objectives</a></li>
+                        </li>
+                        <li class="nav-item">
+                        <li><a class="nav-link" href="achievement.html">Achievements</a></li>
+                        </li>
+                        <li class="nav-item">
+                        <li><a class="nav-link" href="events.html">Events and Updates</a></li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-us">Contact Us</a>
+                        </li>
                     </ul>
-                    <!-- The .achieve-btn buttons will be dynamically appended here -->
                 </div>
             </div>
         </div>
@@ -91,7 +115,7 @@
             <!-- Title will be dynamically updated here -->
         </div>
         <div class="con-achievement">
-            <div class="achieve-btn">                
+            <div class="achieve-btn">
                 <button class="mapping">Geomapping</button>
                 <button class="training">Geospatial Cability Enhancement Center</button>
                 <button class="research">Technology Driven Research and Development Provider</button>
@@ -99,100 +123,100 @@
                     <img src="/img/leftarrow.png" alt="Arrow to Left">Back
                 </button>               
             </div>
-            
-            
+
+
             <div id="achieve">
                 <div class="list-achieve">
                     <div class="achieve-con">
                         <img src="/img/georisk-infanta.jpg" class="achieve-img" alt="Achievement Photo">
                         <div class="achievement-det">
-                        <h2>The SLSU-CHERM in GeoRiskPH Platform Training Infanta LDRRMO and DOST-PHIVOLCS.</h2>
-                        <p class="setting">Place or Location <br> Date of the Accomplishment</p>
-                        <p>The Southern Luzon State University (SLSU) - Center for Hazard and Environmental 
-                            Resource Mapping (CHERM) participated in the GeoRiskPH Platforms Training organized 
-                            by Infanta LDRRMO and facilitated by DOST-PHIVOLCS to enhance its technical 
-                            capacity in geospatial tools for Disaster Risk Reduction and Management (DRRM). 
-                            The two-day training strengthened CHERM’s collaboration with local stakeholders, 
-                            improved its skills in using HazardHunterPH, GeoMapperPH, and GeoAnalyticsPH, and 
-                            reinforced its commitment to supporting LGUs in hazard mapping, exposure data 
-                            collection, and risk analysis.</p>                      
-                        </div>  
+                            <h2>The SLSU-CHERM in GeoRiskPH Platform Training Infanta LDRRMO and DOST-PHIVOLCS.</h2>
+                            <p class="setting">Place or Location <br> Date of the Accomplishment</p>
+                            <p>The Southern Luzon State University (SLSU) - Center for Hazard and Environmental
+                                Resource Mapping (CHERM) participated in the GeoRiskPH Platforms Training organized
+                                by Infanta LDRRMO and facilitated by DOST-PHIVOLCS to enhance its technical
+                                capacity in geospatial tools for Disaster Risk Reduction and Management (DRRM).
+                                The two-day training strengthened CHERM’s collaboration with local stakeholders,
+                                improved its skills in using HazardHunterPH, GeoMapperPH, and GeoAnalyticsPH, and
+                                reinforced its commitment to supporting LGUs in hazard mapping, exposure data
+                                collection, and risk analysis.</p>
+                        </div>
                     </div>
                     <span></span>
-                </div>      
-                <div class="list-achieve">
-                <div class="achieve-con">
-                    <img src="/img/georisk-infanta.jpg" class="achieve-img" alt="Achievement Photo">
-                    <div class="achievement-det">
-                        <h2>The SLSU-CHERM in GeoRiskPH Platform Training Infanta LDRRMO and DOST-PHIVOLCS.</h2>
-                        <p class="setting">Place or Location <br> Date of the Accomplishment</p>
-                        <p>The Southern Luzon State University (SLSU) - Center for Hazard and Environmental 
-                        Resource Mapping (CHERM) participated in the GeoRiskPH Platforms Training organized 
-                        by Infanta LDRRMO and facilitated by DOST-PHIVOLCS to enhance its technical 
-                        capacity in geospatial tools for Disaster Risk Reduction and Management (DRRM). 
-                        The two-day training strengthened CHERM’s collaboration with local stakeholders, 
-                        improved its skills in using HazardHunterPH, GeoMapperPH, and GeoAnalyticsPH, and 
-                        reinforced its commitment to supporting LGUs in hazard mapping, exposure data 
-                        collection, and risk analysis.</p>                      
-                    </div>  
                 </div>
-                <span></span>
-                </div> 
                 <div class="list-achieve">
                     <div class="achieve-con">
                         <img src="/img/georisk-infanta.jpg" class="achieve-img" alt="Achievement Photo">
                         <div class="achievement-det">
-                        <h2>The SLSU-CHERM in GeoRiskPH Platform Training Infanta LDRRMO and DOST-PHIVOLCS.</h2>
-                        <p class="setting">Place or Location <br> Date of the Accomplishment</p>
-                        <p>The Southern Luzon State University (SLSU) - Center for Hazard and Environmental 
-                            Resource Mapping (CHERM) participated in the GeoRiskPH Platforms Training organized 
-                            by Infanta LDRRMO and facilitated by DOST-PHIVOLCS to enhance its technical 
-                            capacity in geospatial tools for Disaster Risk Reduction and Management (DRRM). 
-                            The two-day training strengthened CHERM’s collaboration with local stakeholders, 
-                            improved its skills in using HazardHunterPH, GeoMapperPH, and GeoAnalyticsPH, and 
-                            reinforced its commitment to supporting LGUs in hazard mapping, exposure data 
-                            collection, and risk analysis.</p>                      
-                        </div>  
+                            <h2>The SLSU-CHERM in GeoRiskPH Platform Training Infanta LDRRMO and DOST-PHIVOLCS.</h2>
+                            <p class="setting">Place or Location <br> Date of the Accomplishment</p>
+                            <p>The Southern Luzon State University (SLSU) - Center for Hazard and Environmental
+                                Resource Mapping (CHERM) participated in the GeoRiskPH Platforms Training organized
+                                by Infanta LDRRMO and facilitated by DOST-PHIVOLCS to enhance its technical
+                                capacity in geospatial tools for Disaster Risk Reduction and Management (DRRM).
+                                The two-day training strengthened CHERM’s collaboration with local stakeholders,
+                                improved its skills in using HazardHunterPH, GeoMapperPH, and GeoAnalyticsPH, and
+                                reinforced its commitment to supporting LGUs in hazard mapping, exposure data
+                                collection, and risk analysis.</p>
+                        </div>
                     </div>
                     <span></span>
-                </div> 
+                </div>
                 <div class="list-achieve">
                     <div class="achieve-con">
                         <img src="/img/georisk-infanta.jpg" class="achieve-img" alt="Achievement Photo">
                         <div class="achievement-det">
-                        <h2>The SLSU-CHERM in GeoRiskPH Platform Training Infanta LDRRMO and DOST-PHIVOLCS.</h2>
-                        <p class="setting">Place or Location <br> Date of the Accomplishment</p>
-                        <p>The Southern Luzon State University (SLSU) - Center for Hazard and Environmental 
-                            Resource Mapping (CHERM) participated in the GeoRiskPH Platforms Training organized 
-                            by Infanta LDRRMO and facilitated by DOST-PHIVOLCS to enhance its technical 
-                            capacity in geospatial tools for Disaster Risk Reduction and Management (DRRM). 
-                            The two-day training strengthened CHERM’s collaboration with local stakeholders, 
-                            improved its skills in using HazardHunterPH, GeoMapperPH, and GeoAnalyticsPH, and 
-                            reinforced its commitment to supporting LGUs in hazard mapping, exposure data 
-                            collection, and risk analysis.</p>                      
-                        </div>  
+                            <h2>The SLSU-CHERM in GeoRiskPH Platform Training Infanta LDRRMO and DOST-PHIVOLCS.</h2>
+                            <p class="setting">Place or Location <br> Date of the Accomplishment</p>
+                            <p>The Southern Luzon State University (SLSU) - Center for Hazard and Environmental
+                                Resource Mapping (CHERM) participated in the GeoRiskPH Platforms Training organized
+                                by Infanta LDRRMO and facilitated by DOST-PHIVOLCS to enhance its technical
+                                capacity in geospatial tools for Disaster Risk Reduction and Management (DRRM).
+                                The two-day training strengthened CHERM’s collaboration with local stakeholders,
+                                improved its skills in using HazardHunterPH, GeoMapperPH, and GeoAnalyticsPH, and
+                                reinforced its commitment to supporting LGUs in hazard mapping, exposure data
+                                collection, and risk analysis.</p>
+                        </div>
                     </div>
                     <span></span>
-                </div> 
+                </div>
                 <div class="list-achieve">
                     <div class="achieve-con">
                         <img src="/img/georisk-infanta.jpg" class="achieve-img" alt="Achievement Photo">
                         <div class="achievement-det">
-                        <h2>The SLSU-CHERM in GeoRiskPH Platform Training Infanta LDRRMO and DOST-PHIVOLCS.</h2>
-                        <p class="setting">Place or Location <br> Date of the Accomplishment</p>
-                        <p>The Southern Luzon State University (SLSU) - Center for Hazard and Environmental 
-                            Resource Mapping (CHERM) participated in the GeoRiskPH Platforms Training organized 
-                            by Infanta LDRRMO and facilitated by DOST-PHIVOLCS to enhance its technical 
-                            capacity in geospatial tools for Disaster Risk Reduction and Management (DRRM). 
-                            The two-day training strengthened CHERM’s collaboration with local stakeholders, 
-                            improved its skills in using HazardHunterPH, GeoMapperPH, and GeoAnalyticsPH, and 
-                            reinforced its commitment to supporting LGUs in hazard mapping, exposure data 
-                            collection, and risk analysis.</p>                      
-                        </div>  
+                            <h2>The SLSU-CHERM in GeoRiskPH Platform Training Infanta LDRRMO and DOST-PHIVOLCS.</h2>
+                            <p class="setting">Place or Location <br> Date of the Accomplishment</p>
+                            <p>The Southern Luzon State University (SLSU) - Center for Hazard and Environmental
+                                Resource Mapping (CHERM) participated in the GeoRiskPH Platforms Training organized
+                                by Infanta LDRRMO and facilitated by DOST-PHIVOLCS to enhance its technical
+                                capacity in geospatial tools for Disaster Risk Reduction and Management (DRRM).
+                                The two-day training strengthened CHERM’s collaboration with local stakeholders,
+                                improved its skills in using HazardHunterPH, GeoMapperPH, and GeoAnalyticsPH, and
+                                reinforced its commitment to supporting LGUs in hazard mapping, exposure data
+                                collection, and risk analysis.</p>
+                        </div>
                     </div>
                     <span></span>
-                </div>     
-            </div>  
+                </div>
+                <div class="list-achieve">
+                    <div class="achieve-con">
+                        <img src="/img/georisk-infanta.jpg" class="achieve-img" alt="Achievement Photo">
+                        <div class="achievement-det">
+                            <h2>The SLSU-CHERM in GeoRiskPH Platform Training Infanta LDRRMO and DOST-PHIVOLCS.</h2>
+                            <p class="setting">Place or Location <br> Date of the Accomplishment</p>
+                            <p>The Southern Luzon State University (SLSU) - Center for Hazard and Environmental
+                                Resource Mapping (CHERM) participated in the GeoRiskPH Platforms Training organized
+                                by Infanta LDRRMO and facilitated by DOST-PHIVOLCS to enhance its technical
+                                capacity in geospatial tools for Disaster Risk Reduction and Management (DRRM).
+                                The two-day training strengthened CHERM’s collaboration with local stakeholders,
+                                improved its skills in using HazardHunterPH, GeoMapperPH, and GeoAnalyticsPH, and
+                                reinforced its commitment to supporting LGUs in hazard mapping, exposure data
+                                collection, and risk analysis.</p>
+                        </div>
+                    </div>
+                    <span></span>
+                </div>
+            </div>
         </div>
     </section>
     <br>
@@ -204,15 +228,13 @@
     <br>
     <br>
 
-    <footer>
-        <div class="d-flex p-4 footer">
-            <div class="col-1">
-                <div class="bagong-pilipinas">
-                    <img src="/img/Hi-Res-BAGONG-PILIPINAS-LOGO-1474x1536.png" class="bagong-pilipinas-logo">
-                    <p class="text-center" style="font-size: 20px; font-weight: bold; color: white;">REPUBLIC OF THE PHILIPPINES</p>
-                </div>
+    <!--Footer-->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="bagong-pilipinas">
+                <img src="/img/Hi-Res-BAGONG-PILIPINAS-LOGO-1474x1536.png" class="bagong-pilipinas-logo">
             </div>
-            <div class="col-md-4">
+            <div class="footer-col">
                 <div class="cherm">
                     <img src="/img/slsu-cherm-logo.png" class="cherm-logo">
                     <p class="text-center" style="font-size: 20px;">Southern Luzon State University</p>
@@ -220,12 +242,12 @@
                         Mapping<br>(CHERM)</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="p-5 contact-us">
+            <div class="footer-col">
+                <div class="p-5 contact-us" id="contact-us">
                     <p>Contact Us:</p>
                     <div class="facebook">
                         <img src="/img/facebook.png" class="icon">
-                        <p>SLSU Center for Hazard and Environmental<br> Resource Mapping - CHERM</p>
+                        <p>SLSU Center for Hazard and Environmental Resource Mapping(CHERM)</p>
                     </div>
 
                     <div class="gmail">
@@ -238,27 +260,34 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.1698134828434!2d121.62914570000001!3d13.9484925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd4b5adf90d2e9%3A0xfdc797625c9f5ab1!2sDepartment%20of%20Science%20and%20Technology%20(DOST)%20-%20Quezon%20S%20and%20T%20Center!5e0!3m2!1sen!2sph!4v1742370723029!5m2!1sen!2sph"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="footer-col">
+                <div class="map">
+                    <iframe class="map-frame"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.1698134828434!2d121.62914570000001!3d13.9484925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd4b5adf90d2e9%3A0xfdc797625c9f5ab1!2sDepartment%20of%20Science%20and%20Technology%20(DOST)%20-%20Quezon%20S%20and%20T%20Center!5e0!3m2!1sen!2sph!4v1742370723029!5m2!1sen!2sph"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </footer>
 
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <!-- Popper.js (necessary for Bootstrap's dropdowns) -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
-      <!-- Bootstrap JS -->
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Popper.js (necessary for Bootstrap's dropdowns) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
         // REDIRECTION TO ABOUT US
         function goToAboutUs() {
             window.location.href = "index.html#what-is-cherm";
             sessionStorage.setItem("scrollToWhatIsCherm", "true"); // Store flag in sessionStorage
+        }
+
+        function goToContactUs() {
+            window.location.href = "index.html#contact-us";
+            sessionStorage.setItem("scrollToContactUs", "true");
         }
 
         // BACK BUTTON
@@ -273,7 +302,7 @@
 
                 const modalInstance = bootstrap.Modal.getInstance(navModal);
                 if (modalInstance) {
-                    modalInstance.hide(); 
+                    modalInstance.hide();
                 }
 
                 const backdrop = document.querySelector('.modal-backdrop');
@@ -294,44 +323,44 @@
 
         // BUTTONS IN THE NAV MODAL
         document.addEventListener("DOMContentLoaded", function () {
-        const achieveBtnContainer = document.querySelector(".achieve-btn"); // Select the .achieve-btn container
-        const modalBody = document.querySelector("#navModal .modal-body"); // Select the modal body
-        const originalParent = achieveBtnContainer.parentElement; // Store the original parent of .achieve-btn
+            const achieveBtnContainer = document.querySelector(".achieve-btn"); // Select the .achieve-btn container
+            const modalBody = document.querySelector("#navModal .modal-body"); // Select the modal body
+            const originalParent = achieveBtnContainer.parentElement; // Store the original parent of .achieve-btn
 
-        function moveAchieveButtons() {
-            if (window.innerWidth <= 767) {
-                // Move .achieve-btn to the modal for small devices
-                if (!modalBody.contains(achieveBtnContainer)) {
-                    modalBody.appendChild(achieveBtnContainer);
-                    console.log("Buttons moved to modal for small devices.");
-                }
-            } else {
-                // Move .achieve-btn back to its original position for larger devices
-                if (!originalParent.contains(achieveBtnContainer)) {
-                    originalParent.insertBefore(achieveBtnContainer, originalParent.firstChild);
-                    console.log("Buttons moved back to original position.");
+            function moveAchieveButtons() {
+                if (window.innerWidth <= 767) {
+                    // Move .achieve-btn to the modal for small devices
+                    if (!modalBody.contains(achieveBtnContainer)) {
+                        modalBody.appendChild(achieveBtnContainer);
+                        console.log("Buttons moved to modal for small devices.");
+                    }
+                } else {
+                    // Move .achieve-btn back to its original position for larger devices
+                    if (!originalParent.contains(achieveBtnContainer)) {
+                        originalParent.insertBefore(achieveBtnContainer, originalParent.firstChild);
+                        console.log("Buttons moved back to original position.");
+                    }
                 }
             }
-        }
 
-        // Run the function on page load and on window resize
-        moveAchieveButtons();
-        window.addEventListener("resize", moveAchieveButtons);
-    });
+            // Run the function on page load and on window resize
+            moveAchieveButtons();
+            window.addEventListener("resize", moveAchieveButtons);
+        });
 
 
     </script>
 
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const achieveContainer = document.getElementById("achieve");
-    const achieveTitle = document.getElementById("achieve-title");
+        document.addEventListener("DOMContentLoaded", function () {
+            const achieveContainer = document.getElementById("achieve");
+            const achieveTitle = document.getElementById("achieve-title");
 
-    // BUTTONS FOR ACHIEVEMENTS
-    const achievements = {
-        mapping: {
-            title: "Geomapping",
-            content: `
+            // BUTTONS FOR ACHIEVEMENTS
+            const achievements = {
+                mapping: {
+                    title: "Geomapping",
+                    content: `
                 <div class="list-achieve">
                     <div class="achieve-con">
                         <img src="/img/georisk-infanta.jpg" class="achieve-img" alt="Mapping Achievement">
@@ -393,10 +422,10 @@
                     <span></span>
                 </div>
             `
-        },
-        training: {
-            title: "Geospatial Capability Enhancement Training Center",
-            content: `
+                },
+                training: {
+                    title: "Geospatial Capability Enhancement Training Center",
+                    content: `
                 <div class="list-achieve">
                     <div class="achieve-con">
                         <img src="/img/training.jpg" class="achieve-img" alt="Training Achievement">
@@ -446,10 +475,10 @@
                     <span></span>
                 </div>
             `
-        },
-        research: {
-            title: "Technology Driven Research and Development Provider",
-            content: `
+                },
+                research: {
+                    title: "Technology Driven Research and Development Provider",
+                    content: `
                 <div class="list-achieve">
                     <div class="achieve-con">
                         <img src="/img/research.jpg" class="achieve-img" alt="Research Achievement">
@@ -487,29 +516,63 @@
                     <span></span>
                 </div>
             `
+                }
+            };
+
+            // Function to update the content and title in #achieve
+            function updateAchievement(category) {
+                achieveTitle.textContent = achievements[category].title; // Update the title
+                achieveContainer.innerHTML = achievements[category].content; // Update the content
+            }
+
+            document.querySelector(".mapping").addEventListener("click", function () {
+                updateAchievement("mapping");
+            });
+
+            document.querySelector(".training").addEventListener("click", function () {
+                updateAchievement("training");
+            });
+
+            document.querySelector(".research").addEventListener("click", function () {
+                updateAchievement("research");
+            });
+        });
+
+
+        const aboutUs = document.getElementById('navbarDropdown');
+        const dropdown = document.getElementById('customDropdown');
+
+        if (aboutUs && dropdown) {
+            // Show on hover
+            aboutUs.addEventListener('mouseenter', () => {
+                dropdown.style.display = 'block';
+            });
+
+            aboutUs.addEventListener('mouseleave', () => {
+                setTimeout(() => {
+                    if (!dropdown.matches(':hover')) {
+                        dropdown.style.display = 'none';
+                    }
+                }, 200);
+            });
+
+            dropdown.addEventListener('mouseenter', () => {
+                dropdown.style.display = 'block';
+            });
+
+            dropdown.addEventListener('mouseleave', () => {
+                dropdown.style.display = 'none';
+            });
+
+            // Show on click too
+            aboutUs.addEventListener('click', (e) => {
+                e.preventDefault(); // prevent link jump
+                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+            });
         }
-    };
-
-    // Function to update the content and title in #achieve
-    function updateAchievement(category) {
-        achieveTitle.textContent = achievements[category].title; // Update the title
-        achieveContainer.innerHTML = achievements[category].content; // Update the content
-    }
-
-    document.querySelector(".mapping").addEventListener("click", function () {
-        updateAchievement("mapping");
-    });
-
-    document.querySelector(".training").addEventListener("click", function () {
-        updateAchievement("training");
-    });
-
-    document.querySelector(".research").addEventListener("click", function () {
-        updateAchievement("research");
-    });
-});
 
     </script>
 
-    </body>
+</body>
+
 </html>
