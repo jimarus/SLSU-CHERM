@@ -4,6 +4,7 @@ body,
 html {
     overflow-x: hidden;
 }
+
 body {
     background-color: #fdfdfd !important;
 }
@@ -59,50 +60,59 @@ body {
 
 }
 
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler:active {
+    color: white !important;
+}
 /*--------------------------------------------------------------
 #   Custom Dropdown Menu
 --------------------------------------------------------------*/
 
 .custom-dropdown-menu {
     position: fixed !important;
-    top: 114px; /* Adjust based on your navbar height */
-    left: 50%;  /* Adjust based on trigger position */
+    top: 114px;
+    /* Adjust based on your navbar height */
+    left: 50%;
+    /* Adjust based on trigger position */
     transform: translateX(-50%);
-    background-color: white;
+    background-color: #0b5b2c94 !important;
     border: none;
     padding: 10px 0;
     display: none;
     z-index: 9999;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     height: auto;
     width: 100%;
 }
 
-.dropdown-menu-container{
+.dropdown-menu-container {
     position: relative;
     display: flex;
     flex-direction: row;
 }
 
-.slsu-cherm-partnership{
+.slsu-cherm-partnership {
     display: flex;
     flex-direction: column;
     width: 300px;
     margin-left: 20px;
 }
 
-.slsu-cherm-partnership img{
+.slsu-cherm-partnership img {
     width: 90px;
     height: 90px;
 }
 
-.dropdown-link-container{
+.dropdown-link-container {
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
 
-.dropdown-link{
+.dropdown-link {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -112,7 +122,7 @@ body {
 .custom-dropdown-menu .dropdown-link .dropdown-item {
     display: block;
     padding: 10px 20px;
-    color: black;
+    color: white;
     font-weight: 400;
     font-size: 1.1rem;
     text-decoration: none;
@@ -120,7 +130,7 @@ body {
 }
 
 .custom-dropdown-menu .dropdown-link .dropdown-item:hover {
-    color: #0b5b2cb6;
+    color: white;
     font-weight: 700;
 }
 
@@ -146,21 +156,30 @@ body {
 --------------------------------------------------------------*/
 
 .modal-content {
-    background-color: #0B5B2C; /* Change to your desired background color */
-    color: white; /* Change text color */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    border: none; /* Remove border */
+    background-color: #0B5B2C;
+    /* Change to your desired background color */
+    color: white;
+    /* Change text color */
+    border-radius: 10px;
+    /* Optional: Add rounded corners */
+    border: none;
+    /* Remove border */
 }
 
 .modal-header {
-    background-color: #118AB2; /* Header background color */
-    color: white; /* Header text color */
-    border-bottom: none; /* Remove header border */
+    background-color: #118AB2;
+    /* Header background color */
+    color: white;
+    /* Header text color */
+    border-bottom: none;
+    /* Remove header border */
 }
 
 .modal-body {
-    background-color: #0B5B2C; /* Body background color */
-    color: white; /* Body text color */
+    background-color: #0B5B2C;
+    /* Body background color */
+    color: white;
+    /* Body text color */
 }
 
 .modal-body .nav-link {
@@ -169,13 +188,17 @@ body {
 }
 
 .modal-footer {
-    background-color: #118AB2; /* Footer background color */
-    color: white; /* Footer text color */
-    border-top: none; /* Remove footer border */
+    background-color: #118AB2;
+    /* Footer background color */
+    color: white;
+    /* Footer text color */
+    border-top: none;
+    /* Remove footer border */
 }
 
 .modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.8); /* Darken the backdrop */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Darken the backdrop */
 }
 
 
@@ -1177,10 +1200,12 @@ iframe {
         flex-direction: column;
         align-items: center;
     }
+
     #objectives h2 {
         font-size: 3.3rem;
         margin-top: 5%;
     }
+
     .list-obj {
         width: 90%;
     }
@@ -1190,10 +1215,12 @@ iframe {
     #objectives {
         padding: 5% 10%;
     }
+
     #objectives h2 {
         font-size: 2.5rem;
         margin-top: 13%;
     }
+
     .num-img {
         margin-left: 0;
     }
@@ -1203,19 +1230,21 @@ iframe {
     #objectives {
         padding: 5% 5%;
     }
+
     #objectives h2 {
         font-size: 2rem;
         margin-top: 18%;
     }
+
     .num-img {
         width: 100%;
     }
-    
+
     .num-icon {
         width: 90%;
         height: auto;
     }
-    
+
     .obj-num {
         width: 90%;
     }
@@ -1226,18 +1255,21 @@ iframe {
 #events {
     padding: 10% 18%;
 }
+
 .event-con {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 #update-events {
     padding: 0% 4%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 55px;
 }
+
 .title {
     color: #118ab2;
     font-size: 50px;
@@ -1252,9 +1284,11 @@ iframe {
     margin-bottom: 6%;
     object-fit: cover;
 }
+
 .event-det {
     width: 100%;
 }
+
 .event-det h2 {
     font-size: 1.5em;
     margin-bottom: 3%;
@@ -1286,32 +1320,39 @@ iframe {
         font-size: 2.2em;
         text-align: center;
     }
+
     #events {
         padding: 21% 7%;
     }
+
     .event-con {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .event-img {
         width: 100%;
         height: 27vh;
         margin-bottom: 6%;
         object-fit: cover;
     }
+
     .event-det {
         width: 100%;
     }
+
     .event-det h2 {
         font-size: 18px;
         width: 100%;
     }
+
     .event-det p {
         font-size: 13px;
         width: 100%;
     }
+
     .event-det span {
         width: 100%;
     }
@@ -1323,32 +1364,39 @@ iframe {
         font-size: 2.6em;
         text-align: center;
     }
+
     #events {
         padding: 17% 9%;
     }
+
     .event-con {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .event-img {
         width: 100%;
         height: 29vh;
         margin-bottom: 6%;
         object-fit: cover;
     }
+
     .event-det {
         width: 100%;
     }
+
     .event-det h2 {
         font-size: 18px;
         width: 100%;
     }
+
     .event-det p {
         font-size: 13px;
         width: 100%;
     }
+
     .event-det span {
         width: 100%;
     }
@@ -1359,32 +1407,39 @@ iframe {
     #events .title {
         font-size: 2.9em;
     }
+
     #events {
         padding: 15% 10%;
     }
+
     .event-con {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .event-img {
         width: 100%;
         height: 29vh;
         margin-bottom: 6%;
         object-fit: cover;
     }
+
     .event-det {
         width: 100%;
     }
+
     .event-det h2 {
         font-size: 20px;
         width: 100%;
     }
+
     .event-det p {
         font-size: 14px;
         width: 100%;
     }
+
     .event-det span {
         width: 100%;
     }
@@ -1395,32 +1450,39 @@ iframe {
     #events .title {
         font-size: 3.2em;
     }
+
     #events {
         padding: 12% 12%;
     }
+
     .event-con {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .event-img {
         width: 100%;
         height: 30vh;
         margin-bottom: 6%;
         object-fit: cover;
     }
+
     .event-det {
         width: 100%;
     }
+
     .event-det h2 {
         font-size: 22px;
         width: 100%;
     }
+
     .event-det p {
         font-size: 15px;
         width: 100%;
     }
+
     .event-det span {
         width: 100%;
     }
@@ -1431,29 +1493,35 @@ iframe {
     #events {
         padding: 11% 14%;
     }
+
     .event-con {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .event-img {
         width: 100%;
         height: 32vh;
         margin-bottom: 6%;
         object-fit: cover;
     }
+
     .event-det {
         width: 100%;
     }
+
     .event-det h2 {
         font-size: 24px;
         width: 100%;
     }
+
     .event-det p {
         font-size: 17px;
         width: 100%;
     }
+
     .event-det span {
         width: 100%;
     }
@@ -1466,13 +1534,15 @@ iframe {
     padding: 10% 12%;
     gap: 10%;
 }
+
 .con-achievement {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: start;
     gap: 3vw;
-    position: relative; 
+    position: relative;
 }
+
 .list-achieve {
     width: 98%;
 }
@@ -1494,13 +1564,16 @@ iframe {
     padding: 2%;
     transform: translateX(-40px);
 }
+
 #achieve::-webkit-scrollbar {
     width: 8px;
 }
+
 #achieve::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 4px;
 }
+
 .achieve-con {
     position: relative;
     align-items: center;
@@ -1514,6 +1587,7 @@ iframe {
     letter-spacing: 1px;
     margin-bottom: 3%;
 }
+
 .achieve-btn {
     display: flex;
     flex-direction: column;
@@ -1523,6 +1597,7 @@ iframe {
     width: 39vh;
     padding: 0% 4%;
 }
+
 .achieve-btn button {
     background-color: #0a4e26e8;
     color: #fff;
@@ -1543,9 +1618,11 @@ iframe {
     text-align: center;
     align-items: center;
 }
+
 .achieve-btn button:hover {
     background-color: #17753e;
 }
+
 .achieve-con {
     display: flex;
     align-items: center;
@@ -1586,26 +1663,30 @@ iframe {
     background-color: #5a5a5a86;
     margin-bottom: 1.5%;
 }
+
 .ach-images {
-        display: grid;
-        justify-items: center;
-        gap: 0vh;
-        margin-top: 7vh;
+    display: grid;
+    justify-items: center;
+    gap: 0vh;
+    margin-top: 7vh;
 }
+
 .ach-images img {
     width: 90%;
     height: 86%;
     border-top: 2px solid #0B5B2C;
     border-bottom: 2px solid #0B5B2C;
     padding: 0.7vh 0vh;
-} 
+}
+
 .arrow-btn img {
     width: 3vh;
     height: 3vh;
     margin-right: 1vh;
 }
+
 #achieve-title {
-    font-size: 2rem; 
+    font-size: 2rem;
     line-height: 1.1;
     font-weight: 500;
     text-align: start;
@@ -1622,33 +1703,40 @@ iframe {
     #achievements {
         padding: 22% 9%;
     }
+
     #achievements .title {
         font-size: 2.4rem;
     }
+
     .con-achievement {
         grid-template-columns: 1fr;
     }
+
     #achieve {
         transform: translateX(0);
         margin-top: 4%;
         padding: 4%;
     }
+
     .achieve-con {
         flex-direction: column;
         gap: 2vh;
         padding: 2vh;
     }
+
     .achieve-img {
         width: 100%;
         max-width: 60%;
     }
+
     .list-achieve span {
         width: 100%;
     }
+
     #achieve-title {
         font-size: 1.3rem;
     }
-    
+
     .achieve-btn {
         display: flex;
         flex-direction: column;
@@ -1656,16 +1744,19 @@ iframe {
         padding: 10px;
         width: 100%;
     }
+
     .achieve-btn button {
         width: 100%;
         max-width: none;
     }
+
     #navModal .achieve-btn {
         display: flex;
         flex-direction: column;
         gap: 10px;
         padding: 10px;
     }
+
     #navModal .achieve-btn button {
         background-color: #0b5b2cd0;
         color: #fdfdfd;
@@ -1678,6 +1769,7 @@ iframe {
         display: block;
         cursor: pointer;
     }
+
     #navModal .achieve-btn button:hover {
         background-color: #148141c0 !important;
         color: white !important;
@@ -1689,29 +1781,36 @@ iframe {
     #achievements {
         padding: 19% 8%;
     }
+
     #achievements .title {
         font-size: 2.6rem;
     }
+
     .con-achievement {
         grid-template-columns: 1fr;
     }
+
     .achieve-btn {
         width: 100%;
         align-items: center;
     }
+
     #achieve {
         transform: translateX(0);
         margin-top: 3%;
         padding: 3%;
     }
+
     .achieve-con {
         flex-direction: column;
         gap: 2vh;
     }
+
     .achieve-img {
         width: 100%;
         max-width: 65%;
     }
+
     .list-achieve span {
         width: 100%;
     }
@@ -1722,16 +1821,19 @@ iframe {
         gap: 10px;
         padding: 10px;
     }
+
     .achieve-btn button {
         width: 100%;
         max-width: none;
     }
+
     #navModal .achieve-btn {
         display: flex;
         flex-direction: column;
         gap: 10px;
         padding: 10px;
     }
+
     #navModal .achieve-btn button {
         background-color: #0b5b2cd0;
         color: #fdfdfd;
@@ -1744,10 +1846,12 @@ iframe {
         display: block;
         cursor: pointer;
     }
+
     #navModal .achieve-btn button:hover {
         background-color: #148141c0 !important;
         color: white !important;
     }
+
     #achieve-title {
         font-size: 1.5rem;
     }
@@ -1759,10 +1863,12 @@ iframe {
         grid-template-columns: 1fr 1.5fr;
         gap: 10%;
     }
+
     .achieve-btn {
         width: 100%;
         align-items: start;
     }
+
     .achieve-btn button {
         padding: 0em 1vh;
         font-size: 1rem;
@@ -1776,32 +1882,40 @@ iframe {
         text-align: center;
         align-items: center;
     }
+
     #achieve {
         transform: translateX(-60px);
         display: flex;
         padding: 2%;
         width: 114%;
     }
+
     .achieve-con {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .achieve-img {
         width: 40%;
     }
+
     .list-achieve span {
         width: 100%;
     }
+
     #achievements {
         padding: 14% 6%;
     }
+
     #achievements .title {
         font-size: 3rem;
     }
+
     #achieve-title {
         font-size: 1.7rem;
     }
+
     .achieve-img {
         width: 100%;
         max-width: 70%;
@@ -1814,15 +1928,19 @@ iframe {
         grid-template-columns: 1fr 2fr;
         gap: 12%;
     }
+
     .achieve-img {
         width: 37%;
     }
+
     #achievements {
         padding: 13% 7%;
     }
+
     #achievements .title {
         font-size: 3.5rem;
     }
+
     .achieve-btn button {
         padding: 0em 1vh;
         font-size: 1rem;
@@ -1836,19 +1954,23 @@ iframe {
         text-align: center;
         align-items: center;
     }
+
     .achieve-btn {
         display: flex;
         gap: 10px;
         justify-content: center;
         flex-wrap: wrap;
     }
+
     #achieve-title {
         font-size: 1.7rem;
     }
+
     #achieve {
         transform: translateX(-90px);
         width: 115%;
     }
+
     .achieve-con {
         display: flex;
         flex-direction: column;
@@ -1862,22 +1984,27 @@ iframe {
         grid-template-columns: 1fr 2fr;
         gap: 12%;
     }
+
     #achievements {
         padding: 11% 10%;
     }
+
     .achieve-btn {
         display: flex;
         gap: 10px;
         justify-content: center;
         flex-wrap: wrap;
     }
+
     #achieve-title {
         font-size: 1.8rem;
     }
+
     #achieve {
         transform: translateX(-80px);
         width: 111%;
     }
+
     .achieve-btn button {
         padding: 0em 1vh;
         font-size: 1.1rem;
@@ -1897,17 +2024,20 @@ iframe {
 #services {
     padding: 10% 18%;
 }
+
 #service {
     display: flex;
     flex-direction: column;
     gap: 6vh;
     padding: 1% 5%;
 }
+
 .list-services {
     display: flex;
     align-items: flex-start;
     gap: 2%;
 }
+
 .icon-service {
     width: 16vh;
     height: 16vh;
@@ -1918,31 +2048,37 @@ iframe {
     border-radius: 8px;
     flex-shrink: 0;
 }
+
 .icon-service img {
     max-width: 73%;
     max-height: 73%;
     width: auto;
     height: auto;
 }
+
 .services-con {
     padding: 1vh 0vh;
     color: #333;
     min-height: auto;
     height: 16vh;
 }
+
 .services-con h2 {
     font-size: 1.6rem;
     font-weight: bold;
     color: #0B5B2C;
 }
+
 .services-con p {
     font-size: 1.1rem;
     line-height: 1.5;
 }
+
 .inquiry-btn {
     margin-bottom: 1%;
     display: flex;
 }
+
 .inquiry-btn p {
     font-size: 1.1rem;
     font-weight: 600;
@@ -1950,6 +2086,7 @@ iframe {
     margin-right: 2%;
     padding-top: 1vh;
 }
+
 .inquiry-btn button {
     background-color: #118ab2;
     color: white;
@@ -1962,6 +2099,7 @@ iframe {
     height: 1%;
     width: auto;
 }
+
 .inquiry-btn button:hover {
     background-color: #13a3d3;
 }
@@ -3005,11 +3143,11 @@ iframe {
         text-align: center;
         width: 90%;
     }
-    
+
     #Home video {
         height: 350px;
     }
-    
+
     #footer {
         height: 650px;
     }
