@@ -960,7 +960,7 @@
     padding: 0% 4%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 55px;
+    gap: 70px;
 }
 .title {
     color: #118ab2;
@@ -979,7 +979,7 @@
     width: 100%;
 }
 .event-det h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 3%;
     color: #333;
     width: 100%;
@@ -1026,7 +1026,7 @@
         width: 100%;
     }
     .event-det h2 {
-        font-size: 18px;
+        font-size: 1em;
         width: 100%;
     }
     .event-det p {
@@ -1062,7 +1062,7 @@
         width: 100%;
     }
     .event-det h2 {
-        font-size: 18px;
+        font-size: 1.1em;
         width: 100%;
     }
     .event-det p {
@@ -1098,7 +1098,7 @@
         width: 100%;
     }
     .event-det h2 {
-        font-size: 20px;
+        font-size: 1.2em;
         width: 100%;
     }
     .event-det p {
@@ -1133,7 +1133,7 @@
         width: 100%;
     }
     .event-det h2 {
-        font-size: 22px;
+        font-size: 1.2em;
         width: 100%;
     }
     .event-det p {
@@ -1165,7 +1165,7 @@
         width: 100%;
     }
     .event-det h2 {
-        font-size: 24px;
+        font-size: 1.3em;
         width: 100%;
     }
     .event-det p {
