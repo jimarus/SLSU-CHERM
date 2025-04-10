@@ -235,16 +235,14 @@ body {
 
 
 .hr1 {
-    font-size: 500;
     border: 5px solid #495057;
     width: 90%;
     align-self: center;
     margin: auto;
-    margin-top: px;
+    margin-top: 50px;
 }
 
 .hr2 {
-    font-size: 500;
     border: 5px solid #494949;
     width: 90%;
     align-self: center;
@@ -299,11 +297,11 @@ body {
 
 .CHERM .cherm-caption>button:active {
     background-color: #0aa279ee;
-    border-color: #0aa279ee;
     color: white;
     transform: translateY(2px);
     transition-duration: .35s;
 }
+
 
 
 .CHERM .cherm-img>.image1 {
@@ -1496,9 +1494,11 @@ iframe {
     padding: 2%;
     transform: translateX(-40px);
 }
+
 #achieve::-webkit-scrollbar {
     width: 8px;
 }
+
 #achieve::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 4px;
