@@ -1286,7 +1286,7 @@
         padding: 19% 8%;
     }
     #services .title{
-        font-size: 2.7rem;
+        font-size: 2.5rem;
     }
     #service {
         gap: 10vh;
@@ -1311,6 +1311,7 @@
         left: 50%;                  
         transform: translateX(-50%);
         text-align: center;
+        max-width: 40vh;   
     }
     .inquiry-btn button {
         display: inline-block;
@@ -1330,7 +1331,7 @@
         padding: 16% 9%;
     }
     #services .title{
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     #service {
         gap: 8vh;
@@ -1355,6 +1356,7 @@
         left: 50%;                  
         transform: translateX(-50%);
         text-align: center;
+        max-width: 40vh;   
     }
     .inquiry-btn button {
         display: inline-block;
@@ -1374,7 +1376,7 @@
         padding: 14% 10%;
     }
     #services .title{
-        font-size: 3.1rem;
+        font-size: 3rem;
     }
     #service {
         gap: 7vh;
@@ -1395,11 +1397,11 @@
         height: 15vh;
     }
     .inquiry-btn {
-        /* display: block;             */
         position: relative;         
         left: 50%;                  
         transform: translateX(-50%);
         text-align: center;
+        max-width: 40vh;   
     }
     .inquiry-btn button {
         display: inline-block;
@@ -1427,6 +1429,13 @@
     .services-con h2 {
         font-size: 1.5rem;
     }
+    .inquiry-btn {
+        max-width: 40vh;     
+    }
+    .inquiry-btn button {
+        display: inline-block;
+        margin: -5px 2px;
+    }
 }
 
 /* Extra Large Devices (1280px and above) */
@@ -1450,5 +1459,16 @@
     .services-con h2 {
         font-size: 1.7rem;
     }
-
+    .inquiry-btn {
+        max-width: 40vh;     
+    }
+    .inquiry-btn button {
+        display: inline-block;
+        margin: -5px 2px;
+    }
+}
+@media (min-width: 1419px) {
+    .inquiry-btn {
+        max-width: 40vh;     
+    }
 }
