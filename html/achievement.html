@@ -21,7 +21,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light shadow-lg">
         <div class="d-flex navbar-content justify-content-between">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="../index.html">
                 <img src="/img/slsu-cherm-logo.png" class="logo-pic" alt="Logo of SLSU CHERM">
                 <h3 class="logo-name">SLSU <br /> CHERM</h3>
             </a>
@@ -33,10 +33,10 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav text-white">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="html/services.html">Services</a>
+                        <a class="nav-link" href="services.html">Services</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="" id="navbarDropdown" onclick="goToAboutUs()">About Us</a>
@@ -63,9 +63,9 @@
             </div>
             <div class="dropdown-link-container">
                 <div class="dropdown-link">
-                    <a class="dropdown-item" href="html/objectives.html">Objectives</a>
-                    <a class="dropdown-item" href="html/achievement.html">Achievements</a>
-                    <a class="dropdown-item" href="html/events.html">Events and Updates</a>
+                    <a class="dropdown-item" href="objectives.html">Objectives</a>
+                    <a class="dropdown-item" href="achievement.html">Achievements</a>
+                    <a class="dropdown-item" href="events.html">Events and Updates</a>
                 </div>
             </div>
         </div>
@@ -84,19 +84,19 @@
                             <a class="nav-link" href="#Home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="html/services.html">Services</a>
+                            <a class="nav-link" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about-us">About Us</a>
                         </li>
                         <li class="nav-item">
-                        <li><a class="nav-link" href="html/objectives.html">Objectives</a></li>
+                        <li><a class="nav-link" href="objectives.html">Objectives</a></li>
                         </li>
                         <li class="nav-item">
-                        <li><a class="nav-link" href="html/achievement.html">Achievements</a></li>
+                        <li><a class="nav-link" href="achievement.html">Achievements</a></li>
                         </li>
                         <li class="nav-item">
-                        <li><a class="nav-link" href="html/events.html">Events and Updates</a></li>
+                        <li><a class="nav-link" href="events.html">Events and Updates</a></li>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact-us">Contact Us</a>
@@ -283,12 +283,12 @@
     <script>
         // REDIRECTION TO ABOUT US
         function goToAboutUs() {
-            window.location.href = "index.html#what-is-cherm";
+            window.location.href = "../index.html#what-is-cherm";
             sessionStorage.setItem("scrollToWhatIsCherm", "true"); // Store flag in sessionStorage
         }
 
         function goToContactUs() {
-            window.location.href = "index.html#contact-us";
+            window.location.href = "../index.html#contact-us";
             sessionStorage.setItem("scrollToContactUs", "true");
         }
 
