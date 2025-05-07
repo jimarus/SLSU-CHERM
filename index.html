@@ -39,7 +39,7 @@
                         <a class="nav-link" href="html/services.html">Services</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="" id="navbarDropdown">About Us</a>
+                        <a class="nav-link" href="#about-us" id="navbarDropdown">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact-us">Contact Us</a>
@@ -309,6 +309,32 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+        const aboutUs = document.getElementById('navbarDropdown');
+        const dropdown = document.getElementById('customDropdown');
+
+        if (aboutUs && dropdown) {
+            aboutUs.addEventListener('mouseenter', () => {
+                dropdown.style.display = 'block';
+            });
+
+            dropdown.addEventListener('mouseleave', () => {
+                dropdown.style.display = 'none';
+            });
+
+            dropdown.addEventListener('mouseenter', () => {
+                dropdown.style.display = 'block';
+            });
+
+            aboutUs.addEventListener('mouseleave', () => {
+                setTimeout(() => {
+                    if (!dropdown.matches(':hover')) {
+                        dropdown.style.display = 'none';
+                    }
+                }, 200);
+            });
+        }
     </script>
 </body>
 
