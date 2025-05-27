@@ -15,7 +15,7 @@ body {
 
 .navbar {
     /* background-image: linear-gradient(to top, #08CA97 0%, #118AB2 100%) !important; */
-    background-color: #0B5B2C !important;
+    background-color: #294D61 !important;
     position: fixed !important;
     width: 100% !important;
     z-index: 1000 !important;
@@ -293,7 +293,7 @@ body {
 
 .CHERM .cherm-caption>h1 {
     font-size: 3.875rem;
-    color: #0B5B2C;
+    color: #7BAB48;
     text-transform: uppercase;
     margin-bottom: 50px;
 }
@@ -602,7 +602,7 @@ body {
     /* Default font size for larger screens */
     font-weight: bold;
     text-align: center;
-    color: #0B5B2C;
+    color: #7BAB48;
     /* Adjust color if needed */
 }
 
@@ -616,26 +616,20 @@ body {
 }
 
 .service-card {
-    background-color: #118AB2;
-    /* Card background color */
+    background-color: #085C76;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     color: white;
     width: 23rem;
-    /* Fixed width for larger desktops */
-    height: 550px;
-    /* Fixed height for larger desktops */
+    height: 450px;
     margin: auto;
-    /* Centers the card within its grid cell */
 }
 
 .service-card img {
     width: 17rem;
-    /* Fixed width for larger desktops */
     height: 17rem;
-    /* Fixed height for larger desktops */
     object-fit: contain;
     margin-top: 20px;
     margin-bottom: 15px;
@@ -889,7 +883,7 @@ body {
 --------------------------------------------------------------*/
 
 .event-container {
-    background-image: linear-gradient(to top, #4AC5D4 0%, #0B5B2C 100%) !important;
+    background-image: linear-gradient(to top, #085C76 0%, #7BAB48 100%) !important;
     width: 100%;
     padding: 40px 200px 40px 200px;
 }
