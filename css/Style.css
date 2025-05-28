@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background-color: #fdfdfd !important;
+    background-color: #F5F5F5;  /* Light gray with a slight warmth */
 }
 
 /*--------------------------------------------------------------
@@ -67,6 +67,7 @@ body {
 .navbar-light .navbar-toggler:active {
     color: white !important;
 }
+
 /*--------------------------------------------------------------
 #   Custom Dropdown Menu
 --------------------------------------------------------------*/
@@ -1105,6 +1106,10 @@ body {
     margin-bottom: 20px;
 }
 
+.facebook >a{
+    color: white;
+}
+
 .facebook .icon {
     object-fit: contain;
     margin-right: 10px;
@@ -1117,6 +1122,10 @@ body {
     font-family: "Inria Sans", sans-serif;
     font-weight: bold;
     font-size: 1.063rem;
+}
+
+.gmail >a{
+    color: white;
 }
 
 .gmail .icon {
@@ -1133,6 +1142,7 @@ body {
     font-size: 1.063rem;
     margin-top: 50px;
 }
+
 
 iframe {
     border-radius: 0.5em;
@@ -1261,6 +1271,11 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.event-con a{
+    text-decoration: none;
+    color: #333;
 }
 
 #update-events {
@@ -2024,17 +2039,20 @@ iframe {
 #services {
     padding: 10% 18%;
 }
+
 #service {
     display: flex;
     flex-direction: column;
     gap: 6vh;
     padding: 1% 5%;
 }
+
 .list-services {
     display: flex;
     align-items: flex-start;
     gap: 2%;
 }
+
 .icon-service {
     width: 16vh;
     height: 16vh;
@@ -2045,31 +2063,37 @@ iframe {
     border-radius: 8px;
     flex-shrink: 0;
 }
+
 .icon-service img {
     max-width: 73%;
     max-height: 73%;
     width: auto;
     height: auto;
 }
+
 .services-con {
     padding: 1vh 0vh;
     color: #333;
     min-height: auto;
     height: 16vh;
 }
+
 .services-con h2 {
     font-size: 1.6rem;
     font-weight: bold;
     color: #0B5B2C;
 }
+
 .services-con p {
     font-size: 1.1rem;
     line-height: 1.5;
 }
+
 .inquiry-btn {
     margin-bottom: 1%;
     display: flex;
 }
+
 .inquiry-btn p {
     font-size: 1.1rem;
     font-weight: 600;
@@ -2077,6 +2101,7 @@ iframe {
     margin-right: 2%;
     padding-top: 1vh;
 }
+
 .inquiry-btn button {
     background-color: #118ab2;
     color: white;
@@ -2089,6 +2114,7 @@ iframe {
     height: 1%;
     width: auto;
 }
+
 .inquiry-btn button:hover {
     background-color: #13a3d3;
 }
@@ -2147,7 +2173,6 @@ iframe {
     font-weight: bold;
     font-family: "Inria Sans", sans-serif;
 }
-
 
 .contact-us>p {
     color: white;
@@ -2730,9 +2755,6 @@ iframe {
         max-width: 35px;
     }
 
-    .address {
-        margin-top: 10px;
-    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 575px) {
