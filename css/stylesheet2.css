@@ -46,7 +46,7 @@
     display: block;
     height: 0.4vh;
     width: 100%;
-    background-color: #0B5B2C;
+    background-color: #034955;
     margin-bottom: 1vh;
 }
 .guidelines {
@@ -75,7 +75,7 @@
     color: #414141;
 }
   .btn-close-modal {
-    background-color: #0a4e26e8;
+    background-color: #008080;
     color: white;
     border: none;
     padding: 1vh;
@@ -87,7 +87,7 @@
     width: auto;
 }
 .btn-close-modal:hover {
-    background-color: #0e6833e8;
+    background-color: #034955;
 }
 .line-modal {
     display: block;
@@ -369,7 +369,7 @@
     padding: 0% 4%;
 }
 .achieve-btn button {
-    background-color: #0a4e26e8;
+    background-color: #008080;
     color: #fff;
     border: none;
     padding: 0em 0vh;
@@ -389,14 +389,14 @@
     align-items: center;
 }
 .achieve-btn button:hover {
-    background-color: #17753e;
+    background-color: #034955;
 }
 .achieve-con {
     display: flex;
     align-items: center;
     gap: 3.5vh;
-    background-color: #0b5b2c2d;
-    border-left: 5px solid #0b5b2ccb;
+    background-color: #00808033;
+    border-left: 5px solid #034955;
     padding: 1.5vh 3vh;
     color: #333;
 }
@@ -776,7 +776,7 @@
 }
 .obj-num {
         font-weight: bold;
-        background-color: #0b5b2ccb;
+        background-color: #034955;
         color: white;
         display: flex;
         justify-content: center;
@@ -944,7 +944,7 @@
     padding: 10% 18%;
 }
 #events .title {
-    color: #333;
+    color: #034955;
     font-size: 60px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -995,7 +995,7 @@
 .event-det span {
     display: block;
     height: 0.3vh;
-    background-color: #118ab2;
+    background-color: #034955;
     margin-bottom: 3%;
     width: 100%;
     box-sizing: border-box;
@@ -1184,7 +1184,7 @@
     padding: 10% 15%;
 }
 #services .title {
-    color: #333;
+    color: #034955;;
     font-size: 3.75rem;
     font-weight: bold;
     letter-spacing: 1px;
@@ -1206,7 +1206,7 @@
 .icon-service {
     width: 16vh;
     height: 16vh;
-    background-color: #118ab2;
+    background-color: #008080;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1233,7 +1233,7 @@
 .services-con h2 {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #0B5B2C;
+    color: #1b1b1b;
 }
 
 .services-con p {
@@ -1257,7 +1257,7 @@
 }
 
 .inquiry-btn button {
-    background-color: #118ab2;
+    background-color: #008080;
     color: white;
     border: none;
     padding: 0.5vh 1vh;
@@ -1270,7 +1270,7 @@
 }
 
 .inquiry-btn button:hover {
-    background-color: #13a3d3;
+    background-color: #034955;
 }
 
 /* Responsive Styles */

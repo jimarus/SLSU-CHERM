@@ -293,8 +293,9 @@
         }
 
         // BACK BUTTON
-        function backAchieve() {
-            window.location.href = "html/achievement.html";
+        function backAchieve(event) {
+            event.preventDefault();
+            window.location.href = "achievement.html";
         }
 
         // Function to hide the modal if the window width is greater than or equal to 992px

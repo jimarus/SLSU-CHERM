@@ -15,7 +15,7 @@ body {
 
 .navbar {
     /* background-image: linear-gradient(to top, #08CA97 0%, #118AB2 100%) !important; */
-    background-color: #294D61 !important;
+    background-color: #008080 !important;
     position: fixed !important;
     width: 100% !important;
     z-index: 1000 !important;
@@ -78,7 +78,7 @@ body {
     left: 50%;
     /* Adjust based on trigger position */
     transform: translateX(-50%);
-    background-color: #0b5b2c94 !important;
+    background-color: #b0bec5c2 !important;
     border: none;
     padding: 10px 0;
     display: none;
@@ -122,15 +122,15 @@ body {
 .custom-dropdown-menu .dropdown-link .dropdown-item {
     display: block;
     padding: 10px 20px;
-    color: white;
-    font-weight: 400;
+    color: #034955;
+    font-weight: 500;
     font-size: 1.1rem;
     text-decoration: none;
     margin: 0px 0px 10px 0px;
 }
 
 .custom-dropdown-menu .dropdown-link .dropdown-item:hover {
-    color: white;
+    color: #034955;
     font-weight: 700;
 }
 
@@ -293,7 +293,7 @@ body {
 
 .CHERM .cherm-caption>h1 {
     font-size: 3.875rem;
-    color: #7BAB48;
+    color: #034955;
     text-transform: uppercase;
     margin-bottom: 50px;
 }
@@ -602,8 +602,7 @@ body {
     /* Default font size for larger screens */
     font-weight: bold;
     text-align: center;
-    color: #7BAB48;
-    /* Adjust color if needed */
+    color: #034955;
 }
 
 
@@ -616,7 +615,7 @@ body {
 }
 
 .service-card {
-    background-color: #085C76;
+    background-color: #008080;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -883,13 +882,13 @@ body {
 --------------------------------------------------------------*/
 
 .event-container {
-    background-image: linear-gradient(to top, #085C76 0%, #7BAB48 100%) !important;
+    background-image: linear-gradient(to top, #034955 6%, #B0BEC5 45%) !important;
     width: 100%;
     padding: 40px 200px 40px 200px;
 }
 
 .event-container .title {
-    color: aliceblue;
+    color: #034955;
     font-size: 3rem;
 }
 
@@ -2090,16 +2089,30 @@ iframe {
 
 /* FOOTER */
 #footer {
-    background-repeat: repeat;
+    position: relative; /* Required for overlay positioning */
     width: 100%;
-    height: 450px;
-    object-fit: contain;
-    background-image: url('../img/footer-background.png');
-    background-size: 100% 100%;
+    height: 400px;
+    background-image: url('../img/image.png'); /* Un-comment and use your path */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 
+#footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #008080dc;
+    z-index: 1;
+}
+
 #footer .footer-container {
+    position: relative;
+    z-index: 1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
