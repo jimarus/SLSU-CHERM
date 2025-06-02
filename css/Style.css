@@ -14,7 +14,6 @@ body {
 --------------------------------------------------------------*/
 
 .navbar {
-    /* background-image: linear-gradient(to top, #08CA97 0%, #118AB2 100%) !important; */
     background-color: #008080 !important;
     position: fixed !important;
     width: 100% !important;
@@ -215,7 +214,6 @@ body {
     margin: 0;
     /* Remove any default margin */
     width: 100%;
-
 }
 
 #Home video {
@@ -225,6 +223,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    box-shadow: 3px 3px 15px rgb(67 67 67 / 80%);
 }
 
 
@@ -294,15 +293,19 @@ body {
 
 .CHERM .cherm-caption>h1 {
     font-size: 3.875rem;
-    color: #034955;
     text-transform: uppercase;
     margin-bottom: 50px;
+    color: #011e22;
+    text-shadow: 1px 1px 2px #FCBBB0;
 }
 
 .CHERM .cherm-caption>p {
     font-size: 1.5rem;
+    font-weight: 500;
     line-height: 3rem;
     width: 750px;
+    color: #011e22;
+    text-shadow: 1px 1px 2px #FCBBB0;
 }
 
 .CHERM .cherm-caption>button {
@@ -326,12 +329,11 @@ body {
     transition-duration: .35s;
 }
 
-
-
 .CHERM .cherm-img>.image1 {
     margin-top: 90px;
     max-width: 600px;
-    padding-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 16px rgb(67 67 67 / 80%);
 }
 
 /*--------------------------------------------------------------
@@ -625,6 +627,7 @@ body {
     width: 23rem;
     height: 450px;
     margin: auto;
+    box-shadow: 3px 3px 16px rgb(67 67 67 / 80%);
 }
 
 .service-card img {
@@ -886,6 +889,7 @@ body {
     background-image: linear-gradient(to top, #034955 6%, #B0BEC5 45%) !important;
     width: 100%;
     padding: 40px 200px 40px 200px;
+    box-shadow: 5px 5px 25px rgb(67 67 67 / 80%);
 }
 
 .event-container .title {
@@ -906,7 +910,7 @@ body {
     background-color: transparent;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 7px #B0BEC5;
 }
 
 .event-card img {
