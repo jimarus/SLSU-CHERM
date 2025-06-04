@@ -1,4 +1,4 @@
-// ...existing code...
+// Scroll-based Highlight for Philippine Provinces
 document.addEventListener('DOMContentLoaded', function() {
     // List of province IDs in the order you want to highlight them
     const provinces = [
@@ -133,3 +133,27 @@ document.addEventListener('DOMContentLoaded', function() {
     highlightProvincesOnScroll();
 });
 
+
+// Hover-based Highlight for Quezon Map City/Municipalities
+window.addEventListener('DOMContentLoaded', () => {
+  const obj = document.getElementById('quezon-map');
+  const tooltip = document.getElementById('mapTooltip');
+
+  obj.addEventListener('load', function() {
+    const svgDoc = obj.contentDocument;
+    if (!svgDoc) return;
+    const paths = svgDoc.querySelectorAll('path');
+
+    paths.forEach((path, idx) => {
+      path.addEventListener('mousemove', (e) => {
+        tooltip.style.display = 'block';
+        tooltip.style.left = (e.clientX + 10) + 'px';
+        tooltip.style.top = (e.clientY - 20) + 'px';
+        tooltip.textContent = `Region ${idx + 1}`;
+      });
+      path.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+      });
+    });
+  });
+});

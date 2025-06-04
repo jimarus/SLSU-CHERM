@@ -335,7 +335,7 @@
     overflow-x: hidden;
     width: 100%;
     box-sizing: border-box;
-    border: 1px solid #33333352;
+    border: 2px solid #33333352;
     padding: 2%;
     transform: translateX(-40px);
 }
@@ -387,6 +387,7 @@
     box-sizing: border-box;
     text-align: center;
     align-items: center;
+    box-shadow: -3px 3px 3px #939393ed;
 }
 .achieve-btn button:hover {
     background-color: #034955;
@@ -399,6 +400,7 @@
     border-left: 5px solid #034955;
     padding: 1.5vh 3vh;
     color: #333;
+    box-shadow: -5px 5px 11px #939393ed;
 }
 
 .achieve-img {
@@ -746,7 +748,7 @@
     padding: 10% 18%;
 }
 #objectives .title {
-    color: #333;
+    color: #034955;
     font-size: 3.75rem;
     font-weight: bold;
     letter-spacing: 1px;
@@ -768,11 +770,15 @@
     flex-direction: column;
     text-align: center;
 }
+.num-img img {
+    box-shadow: -7px 7px 7px #939393ed;
+}
 .num-icon {
     display: inline-block;
     height: 41vh;
     width: 70vh;
     margin-bottom: 30px;
+    border-radius: 5px;
 }
 .obj-num {
         font-weight: bold;
@@ -790,6 +796,7 @@
         box-sizing: border-box;
         text-align: center;
         align-items: center;
+        box-shadow: -7px 7px 7px #939393ed;
 }
     .num-img p {
         max-width: 80vh;
@@ -974,6 +981,7 @@
     height: 28vh;
     margin-bottom: 6%;
     object-fit: cover;
+    border-radius: 5px;
 }
 .event-det {
     width: 100%;
@@ -1212,6 +1220,7 @@
     align-items: center;
     border-radius: 8px;
     flex-shrink: 0;
+    box-shadow: -6px 6px 5px #939393ed;
 }
 
 .icon-service img {

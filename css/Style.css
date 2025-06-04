@@ -237,6 +237,7 @@ body {
     font-size: 3rem;
     text-align: center;
     width: 77%;
+    text-shadow: 2px 2px 5px #444444;
 }
 
 .intro-title .text-wrapper {
@@ -253,7 +254,7 @@ body {
     display: inline-block;
     line-height: 1em;
     transform-origin: 0 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.7);
 }
 
 
