@@ -193,7 +193,7 @@ body > * {
 /* CSS for Quezon Map City/Municipalities (ACHIEVEMENTS) */
 .quezon-map-container {
     position: absolute;
-    top: 27%;
+    top: 29%;
     left: 7%;
     width: 30vw;
     height: 100vh;
@@ -219,6 +219,14 @@ body > * {
     pointer-events: auto;
     max-width: 100vw;
     max-height: 100vh;
+}
+
+@media screen and (max-width: 1780px) {
+    .quezon-map-container {
+        width: 30vw;
+        left: 7%;
+        top: 30%;
+    }
 }
 
 @media screen and (max-width: 1170px) {
