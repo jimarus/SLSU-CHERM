@@ -317,48 +317,45 @@ document.addEventListener("DOMContentLoaded", function () {
             content: `
                 <div class="list-achieve" >
                     <div class="achieve-con">
-                        <img src="../img/training.jpg" class="achieve-img" alt="Training Achievement">
+                        <img src="../img/training1.png" class="achieve-img" alt="Training Achievement">
                         <div class="achievement-det">
-                            <h2>Geospatial Capability Enhancement Training</h2>
-                            <p class="setting">SLSU Training Center <br> March 2025</p>
-                            <p>This program aims to enhance the technical capacity of professionals in geospatial 
-                               tools and remote sensing technologies for better decision-making.</p>                      
+                            <h2>SLSU Staff Trained on GIS for Land Use Planning</h2>
+                            <p class="setting">CHERM Training Room <br>May 23-24, 2024</p>
+                            <p>SLSU Planning and Development Office personnel joined a two-day GIS training on 
+                            May 23–24, 2024, at CHERM, Lucena City. The course covered GIS software use, data 
+                            creation, and map generation for Land Use Development and Infrastructure 
+                            Planning (LUDIP). Facilitated by CHERM staff, the training aimed to enhance GIS skills 
+                            for improving the university’s LUDI Plan.</p>                      
                         </div>  
                     </div>
                     <span></span>
                 </div>
                 <div class="list-achieve" >
                     <div class="achieve-con">
-                        <img src="../img/training.jpg" class="achieve-img" alt="Training Achievement">
+                        <img src="../img/training2.jpg" class="achieve-img" alt="Training Achievement">
                         <div class="achievement-det">
-                            <h2>Geospatial Capability Enhancement Training</h2>
-                            <p class="setting">SLSU Training Center <br> March 2025</p>
-                            <p>This program aims to enhance the technical capacity of professionals in geospatial 
-                               tools and remote sensing technologies for better decision-making.</p>                      
+                            <h2>CHERM Strengthens Disaster Preparedness Through GeoRiskPH Training</h2>
+                            <p class="setting">Infanta, Quezon <br> December 10-11, 2024</p>
+                            <p>The SLSU–CHERM joined the GeoRiskPH training by Infanta LDRRMO and DOST-PHIVOLCS to boost its 
+                            disaster risk reduction skills. The team trained on HazardHunterPH, GeoMapperPH, and 
+                            GeoAnalyticsPH, gaining tools and partnerships to better support LGUs in hazard mapping 
+                            and disaster planning.</p>                      
                         </div>  
                     </div>
                     <span></span>
                 </div>
                 <div class="list-achieve" >
                     <div class="achieve-con">
-                        <img src="../img/training.jpg" class="achieve-img" alt="Training Achievement">
+                        <img src="../img/training3.png" class="achieve-img" alt="Training Achievement">
                         <div class="achievement-det">
-                            <h2>Geospatial Capability Enhancement Training</h2>
-                            <p class="setting">SLSU Training Center <br> March 2025</p>
-                            <p>This program aims to enhance the technical capacity of professionals in geospatial 
-                               tools and remote sensing technologies for better decision-making.</p>                      
-                        </div>  
-                    </div>
-                    <span></span>
-                </div>
-                <div class="list-achieve" >
-                    <div class="achieve-con">
-                        <img src="../img/training.jpg" class="achieve-img" alt="Training Achievement">
-                        <div class="achievement-det">
-                            <h2>Geospatial Capability Enhancement Training</h2>
-                            <p class="setting">SLSU Training Center <br> March 2025</p>
-                            <p>This program aims to enhance the technical capacity of professionals in geospatial 
-                               tools and remote sensing technologies for better decision-making.</p>                      
+                            <h2>CHERM Leads GeoRiskPH Rollout for Quezon LGUs</h2>
+                            <p class="setting">Training Center <br> October 8-1, 2024</p>
+                            <p>SLSU–CHERM, in partnership with DOST CALABARZON, DOST Quezon, and the 
+                            Provincial Government of Quezon, led a 3-day Capacity Building and GeoRiskPH 
+                            Rollout for selected Quezon LGUs. Held on October 8–10 with PHIVOLCS as facilitators, 
+                            the training aimed to equip local stakeholders with skills in using GeoRiskPH tools for 
+                            hazard assessment, exposure database creation, and data-driven planning. The final day 
+                            focused on preparing future GeoRiskPH trainers in the province.</p>                      
                         </div>  
                     </div>
                     <span></span>
