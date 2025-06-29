@@ -1,15 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-            const achieveContainer = document.getElementById("achieve");
-            const achieveTitle = document.getElementById("achieve-title");
+    const achieveContainer = document.getElementById("achieve");
+    const achieveTitle = document.getElementById("achieve-title");
 
-            // BUTTONS FOR ACHIEVEMENTS
-            const achievements = {
-
-                //GEOMAPPING
-
-                mapping: {
-                    title: "Geomapping",
-                    content: `
+    // BUTTONS FOR ACHIEVEMENTS
+    const achievements = {
+        // GEOMAPPING
+        mapping: {
+            title: "Geomapping",
+            content: `
                 <div class="list-achieve"   >
                     <div class="achieve-con">
                         <img src="../mapping-img/2025/20250113_TORIBIO.jpg" class="achieve-img" alt="Mapping Achievement">
@@ -312,13 +310,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     <span></span>
                 </div>
             `
-                },
-
-                //TRAINING CENTER
-
-                training: {
-                    title: "Geospatial Capability Enhancement Training Center",
-                    content: `
+        },
+        // TRAINING CENTER
+        training: {
+            title: "Geospatial Capability Enhancement Training Center",
+            content: `
                 <div class="list-achieve" >
                     <div class="achieve-con">
                         <img src="../img/training.jpg" class="achieve-img" alt="Training Achievement">
@@ -368,13 +364,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     <span></span>
                 </div>
             `
-                },
-
-                //RESEARCH AND DEVELOPMENT
-
-                research: {
-                    title: "Technology Driven Research and Development Provider",
-                    content: `
+        },
+        // RESEARCH AND DEVELOPMENT
+        research: {
+            title: "Technology Driven Research and Development Provider",
+            content: `
                 <div class="list-achieve" >
                     <div class="achieve-con">
                         <img src="../img/cherm-logo.png" class="achieve-img" alt="Research Achievement">
@@ -418,57 +412,80 @@ document.addEventListener("DOMContentLoaded", function () {
                     <span></span>
                 </div>
             `
-                }
-            };
+        }
+    };
 
-            // Function to update the content and title in #achieve
-            function updateAchievement(category) {
-                achieveTitle.textContent = achievements[category].title; // Update the title
-                achieveContainer.innerHTML = achievements[category].content; // Update the content
-            }
+    // Function to update the content and title in #achieve
+    function updateAchievement(category) {
+        if (achievements[category]) {
+            achieveTitle.textContent = achievements[category].title; // Update the title
+            achieveContainer.innerHTML = achievements[category].content; // Update the content
+        } else {
+            console.error(`Category "${category}" not found in achievements.`);
+        }
+    }
 
-            document.querySelector(".mapping").addEventListener("click", function () {
-                updateAchievement("mapping");
-            });
+    // Add event listeners to buttons
+    const mappingButton = document.querySelector(".mapping");
+    const trainingButton = document.querySelector(".training");
+    const researchButton = document.querySelector(".research");
 
-            document.querySelector(".training").addEventListener("click", function () {
-                updateAchievement("training");
-            });
+    if (mappingButton) {
+        mappingButton.addEventListener("click", function () {
+            updateAchievement("mapping");
+        });
+    } else {
+        console.error("Mapping button not found.");
+    }
 
-            document.querySelector(".research").addEventListener("click", function () {
-                updateAchievement("research");
-            });
+    if (trainingButton) {
+        trainingButton.addEventListener("click", function () {
+            updateAchievement("training");
+        });
+    } else {
+        console.error("Training button not found.");
+    }
+
+    if (researchButton) {
+        researchButton.addEventListener("click", function () {
+            updateAchievement("research");
+        });
+    } else {
+        console.error("Research button not found.");
+    }
+
+    // Dropdown functionality for About Us
+    const aboutUs = document.getElementById('navbarDropdown');
+    const dropdown = document.getElementById('customDropdown');
+
+    if (aboutUs && dropdown) {
+        // Show on hover
+        aboutUs.addEventListener('mouseenter', () => {
+            dropdown.style.display = 'block';
         });
 
+        aboutUs.addEventListener('mouseleave', () => {
+            setTimeout(() => {
+                if (!dropdown.matches(':hover')) {
+                    dropdown.style.display = 'none';
+                }
+            }, 200);
+        });
 
-        const aboutUs = document.getElementById('navbarDropdown');
-        const dropdown = document.getElementById('customDropdown');
+        dropdown.addEventListener('mouseenter', () => {
+            dropdown.style.display = 'block';
+        });
 
-        if (aboutUs && dropdown) {
-            // Show on hover
-            aboutUs.addEventListener('mouseenter', () => {
-                dropdown.style.display = 'block';
-            });
+        dropdown.addEventListener('mouseleave', () => {
+            dropdown.style.display = 'none';
+        });
 
-            aboutUs.addEventListener('mouseleave', () => {
-                setTimeout(() => {
-                    if (!dropdown.matches(':hover')) {
-                        dropdown.style.display = 'none';
-                    }
-                }, 200);
-            });
-
-            dropdown.addEventListener('mouseenter', () => {
-                dropdown.style.display = 'block';
-            });
-
-            dropdown.addEventListener('mouseleave', () => {
-                dropdown.style.display = 'none';
-            });
-
-            // Show on click too
-            aboutUs.addEventListener('click', (e) => {
-                e.preventDefault(); // prevent link jump
-                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-            });
-        }
+        // Show on click too
+        aboutUs.addEventListener('click', (e) => {
+            e.preventDefault(); // prevent link jump
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        });
+    } else {
+        console.error("About Us dropdown or customDropdown element not found.");
+    }
+});
