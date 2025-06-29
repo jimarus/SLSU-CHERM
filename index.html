@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <!-- Metadata and external resources -->
+    <!-- Includes meta tags, favicon, title, and external CSS/JS libraries -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -21,10 +23,12 @@
 </head>
 
 <body>   
-    <!-- SVG OF PHILIPPINE MAP -->
+    <!-- SVG Background -->
+    <!-- Dynamically loads the SVG map of the Philippines -->
     <div id="svg-bg"></div>
 
     <!-- Navbar -->
+    <!-- Contains navigation links and dropdown menu -->
     <nav class="navbar navbar-expand-md navbar-light shadow-lg">
         <div class="d-flex navbar-content justify-content-between">
             <a class="navbar-brand" href="index.html">
@@ -79,6 +83,7 @@
     </div>
 
     <!-- Modal -->
+    <!-- Provides a collapsible navigation menu for smaller screens -->
     <div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="navModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div data-bs-theme="dark">
@@ -115,6 +120,8 @@
     </div>
 
 
+    <!-- Hero Section -->
+    <!-- Displays the introductory video and title -->
     <section id="Home" class="dark-background hero section">
         <video autoplay loop muted>
             <source src="img/CHERM.mp4" type="video/mp4">
@@ -131,42 +138,44 @@
 
     <br><br><br>
 
-    <!--What is Cherm-->
-        <section id="what-is-cherm">
-            <div class="p-5">
-                <hr class="shadow-lg hr1">
-            </div>
-            <div class="p-5 CHERM mb-5">
-                <div class="cherm-content">
-                    <div class="cherm-caption">
-                        <h1 data-aos="fade-zoom-in" data-aos-duration="2000">What is cherm?</h1>
-                        <p data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">CHERM is a laboratory that focuses on providing relevant environmental information to the
-                            public
-                            to
-                            help
-                            them in addressing different environmental problems. CHERM is one of DOST-CALABARZON’s
-                            service
-                            laboratories.</p>
-                        <p data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">Also, it is intended as a repository of GIS-Based maps from various partner agencies to
-                            provide
-                            authoritative geospatial data and services for environmental and disaster risk reduction
-                            management,
-                            and
-                            other developmental concern, whether custom printed or downloadable data.</p>
-                    </div>
-                    <div class="cherm-img">
-                        <img src="img/cherm-image.jpg" class="image1" data-aos="fade-up" data-aos-duration="1000"
-                            alt="CHERM Image">
-                    </div>
+    <!-- What is CHERM Section -->
+    <!-- Describes the purpose and mission of CHERM -->
+    <section id="what-is-cherm">
+        <div class="p-5">
+            <hr class="shadow-lg hr1">
+        </div>
+        <div class="p-5 CHERM mb-5">
+            <div class="cherm-content">
+                <div class="cherm-caption">
+                    <h1 data-aos="fade-zoom-in" data-aos-duration="2000">What is cherm?</h1>
+                    <p data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">CHERM is a laboratory that focuses on providing relevant environmental information to the
+                        public
+                        to
+                        help
+                        them in addressing different environmental problems. CHERM is one of DOST-CALABARZON’s
+                        service
+                        laboratories.</p>
+                    <p data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">Also, it is intended as a repository of GIS-Based maps from various partner agencies to
+                        provide
+                        authoritative geospatial data and services for environmental and disaster risk reduction
+                        management,
+                        and
+                        other developmental concern, whether custom printed or downloadable data.</p>
+                </div>
+                <div class="cherm-img">
+                    <img src="img/cherm-image.jpg" class="image1" data-aos="fade-up" data-aos-duration="1000"
+                        alt="CHERM Image">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <div class="pt-1">
         <hr class="shadow-lg hr2">
     </div>
 
-    <!--Services-->
+    <!-- Services Section -->
+    <!-- Highlights the services offered by CHERM -->
     <div class="services">
         <div class="p-5 services-content">
             <h1 class="title" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">OUR SERVICES</h1>
@@ -201,7 +210,8 @@
         </div>
     </div>
 
-    <!--Events-->
+    <!-- Events Section -->
+    <!-- Displays recent events and updates related to CHERM -->
     <div class="event-container">
         <div class="p-4 event-content">
             <h1 class="title" data-aos="fade-right" data-aos-duration="1500">EVENTS AND UPDATES</h1>
@@ -240,7 +250,8 @@
         </div>
     </div>
 
-    <!--Logos-->
+    <!-- Logos Section -->
+    <!-- Showcases partner logos and affiliations -->
     <div class="p-3 logo">
         <div class="cherm_logo" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
             <img src="img/cherm-logo.svg" class="logo1">
@@ -270,7 +281,8 @@
         </div>
     </div>
 
-    <!--Footer-->
+    <!-- Footer -->
+    <!-- Contains contact information, address, and embedded map -->
     <footer id="footer">
         <div class="footer-container">
             <div class="bagong-pilipinas">
@@ -319,15 +331,16 @@
             </div>
         </div>
     </footer>
+    <!-- Footer Copyright -->
+    <!-- Displays copyright information -->
     <div style="width: 100%; background: #034955; color: #fdfdfd; text-align: center; padding: 8px 0 8px 0; font-size: 16px;">
         &copy; 2025 SLSU - CHERM. All rights reserved.
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Scripts -->
+    <!-- Includes external and custom JavaScript files -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <!-- Popper.js (necessary for Bootstrap's dropdowns) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
-    <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
