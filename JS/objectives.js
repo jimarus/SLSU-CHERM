@@ -67,3 +67,48 @@ function goToContactUs() {
     window.location.href = "index.html#contact-us";
     sessionStorage.setItem("scrollToContactUs", "true"); 
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const aboutLink = document.getElementById('navbarDropdown');
+    const dropdown = document.getElementById('customDropdown');
+
+    if (aboutLink && dropdown) {
+        // Show on hover (desktop)
+        aboutLink.addEventListener('mouseenter', () => {
+            dropdown.style.display = 'block';
+        });
+        aboutLink.addEventListener('mouseleave', () => {
+            setTimeout(() => {
+                if (!dropdown.matches(':hover')) dropdown.style.display = 'none';
+            }, 200);
+        });
+        dropdown.addEventListener('mouseenter', () => {
+            dropdown.style.display = 'block';
+        });
+        dropdown.addEventListener('mouseleave', () => {
+            dropdown.style.display = 'none';
+        });
+
+        // Show/hide on click (mobile/touch)
+        aboutLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Toggle dropdown
+            if (dropdown.style.display === 'block') {
+                dropdown.style.display = 'none';
+            } else {
+                dropdown.style.display = 'block';
+            }
+        });
+
+        // Hide dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            if (
+                !aboutLink.contains(event.target) &&
+                !dropdown.contains(event.target)
+            ) {
+                dropdown.style.display = 'none';
+            }
+        });
+    }
+});

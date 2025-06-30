@@ -452,37 +452,81 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Dropdown functionality for About Us
-    const aboutUs = document.getElementById('navbarDropdown');
+//     const aboutUs = document.getElementById('navbarDropdown');
+//     const dropdown = document.getElementById('customDropdown');
+
+//     if (aboutUs && dropdown) {
+//         // Show on hover
+//         aboutUs.addEventListener('mouseenter', () => {
+//             dropdown.style.display = 'block';
+//         });
+
+//         aboutUs.addEventListener('mouseleave', () => {
+//             setTimeout(() => {
+//                 if (!dropdown.matches(':hover')) {
+//                     dropdown.style.display = 'none';
+//                 }
+//             }, 200);
+//         });
+
+//         dropdown.addEventListener('mouseenter', () => {
+//             dropdown.style.display = 'block';
+//         });
+
+//         dropdown.addEventListener('mouseleave', () => {
+//             dropdown.style.display = 'none';
+//         });
+
+//         // Show on click too
+//         aboutUs.addEventListener('click', (e) => {
+//             e.preventDefault(); // prevent link jump
+//             dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+//         });
+//     } else {
+//         console.error("About Us dropdown or customDropdown element not found.");
+//     }
+// });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const aboutLink = document.getElementById('navbarDropdown');
     const dropdown = document.getElementById('customDropdown');
 
-    if (aboutUs && dropdown) {
-        // Show on hover
-        aboutUs.addEventListener('mouseenter', () => {
+    if (aboutLink && dropdown) {
+        // Show on hover (desktop)
+        aboutLink.addEventListener('mouseenter', () => {
             dropdown.style.display = 'block';
         });
-
-        aboutUs.addEventListener('mouseleave', () => {
+        aboutLink.addEventListener('mouseleave', () => {
             setTimeout(() => {
-                if (!dropdown.matches(':hover')) {
-                    dropdown.style.display = 'none';
-                }
+                if (!dropdown.matches(':hover')) dropdown.style.display = 'none';
             }, 200);
         });
-
         dropdown.addEventListener('mouseenter', () => {
             dropdown.style.display = 'block';
         });
-
         dropdown.addEventListener('mouseleave', () => {
             dropdown.style.display = 'none';
         });
 
-        // Show on click too
-        aboutUs.addEventListener('click', (e) => {
-            e.preventDefault(); // prevent link jump
-            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        // Show/hide on click (mobile/touch)
+        aboutLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Toggle dropdown
+            if (dropdown.style.display === 'block') {
+                dropdown.style.display = 'none';
+            } else {
+                dropdown.style.display = 'block';
+            }
         });
-    } else {
-        console.error("About Us dropdown or customDropdown element not found.");
+
+        // Hide dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            if (
+                !aboutLink.contains(event.target) &&
+                !dropdown.contains(event.target)
+            ) {
+                dropdown.style.display = 'none';
+            }
+        });
     }
 });
