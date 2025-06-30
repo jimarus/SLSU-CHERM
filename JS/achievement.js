@@ -450,8 +450,10 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         console.error("Research button not found.");
     }
+});
 
     // Dropdown functionality for About Us
+document.addEventListener("DOMContentLoaded", function () {
     const aboutLink = document.getElementById('navbarDropdown');
     const dropdown = document.getElementById('customDropdown');
 
