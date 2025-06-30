@@ -230,6 +230,29 @@
         AOS.init();
     </script>
     <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const aboutLink = document.getElementById('navbarDropdown');
+        const dropdown = document.getElementById('customDropdown');
+
+        if (aboutLink && dropdown) {
+            aboutLink.addEventListener('mouseenter', () => {
+                dropdown.style.display = 'block';
+            });
+            aboutLink.addEventListener('mouseleave', () => {
+                setTimeout(() => {
+                    if (!dropdown.matches(':hover')) dropdown.style.display = 'none';
+                }, 200);
+            });
+            dropdown.addEventListener('mouseleave', () => {
+                dropdown.style.display = 'none';
+            });
+            dropdown.addEventListener('mouseenter', () => {
+                dropdown.style.display = 'block';
+            });
+        }
+    });
+    </script>
+    <script>
         fetch('../img/philippines.svg')
         .then(response => response.text())
         .then(svg => {
