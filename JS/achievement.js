@@ -452,42 +452,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Dropdown functionality for About Us
-//     const aboutUs = document.getElementById('navbarDropdown');
-//     const dropdown = document.getElementById('customDropdown');
-
-//     if (aboutUs && dropdown) {
-//         // Show on hover
-//         aboutUs.addEventListener('mouseenter', () => {
-//             dropdown.style.display = 'block';
-//         });
-
-//         aboutUs.addEventListener('mouseleave', () => {
-//             setTimeout(() => {
-//                 if (!dropdown.matches(':hover')) {
-//                     dropdown.style.display = 'none';
-//                 }
-//             }, 200);
-//         });
-
-//         dropdown.addEventListener('mouseenter', () => {
-//             dropdown.style.display = 'block';
-//         });
-
-//         dropdown.addEventListener('mouseleave', () => {
-//             dropdown.style.display = 'none';
-//         });
-
-//         // Show on click too
-//         aboutUs.addEventListener('click', (e) => {
-//             e.preventDefault(); // prevent link jump
-//             dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-//         });
-//     } else {
-//         console.error("About Us dropdown or customDropdown element not found.");
-//     }
-// });
-
-document.addEventListener('DOMContentLoaded', function() {
     const aboutLink = document.getElementById('navbarDropdown');
     const dropdown = document.getElementById('customDropdown');
 
