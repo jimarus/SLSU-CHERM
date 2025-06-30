@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Achievement logic
     const achieveContainer = document.getElementById("achieve");
     const achieveTitle = document.getElementById("achieve-title");
 
-    // BUTTONS FOR ACHIEVEMENTS
     const achievements = {
         // GEOMAPPING
         mapping: {
@@ -412,48 +412,24 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // Function to update the content and title in #achieve
     function updateAchievement(category) {
         if (achievements[category]) {
-            achieveTitle.textContent = achievements[category].title; // Update the title
-            achieveContainer.innerHTML = achievements[category].content; // Update the content
+            achieveTitle.textContent = achievements[category].title;
+            achieveContainer.innerHTML = achievements[category].content;
         } else {
             console.error(`Category "${category}" not found in achievements.`);
         }
     }
 
-    // Add event listeners to buttons
     const mappingButton = document.querySelector(".mapping");
     const trainingButton = document.querySelector(".training");
     const researchButton = document.querySelector(".research");
 
-    if (mappingButton) {
-        mappingButton.addEventListener("click", function () {
-            updateAchievement("mapping");
-        });
-    } else {
-        console.error("Mapping button not found.");
-    }
-
-    if (trainingButton) {
-        trainingButton.addEventListener("click", function () {
-            updateAchievement("training");
-        });
-    } else {
-        console.error("Training button not found.");
-    }
-
-    if (researchButton) {
-        researchButton.addEventListener("click", function () {
-            updateAchievement("research");
-        });
-    } else {
-        console.error("Research button not found.");
-    }
-});
+    if (mappingButton) mappingButton.addEventListener("click", () => updateAchievement("mapping"));
+    if (trainingButton) trainingButton.addEventListener("click", () => updateAchievement("training"));
+    if (researchButton) researchButton.addEventListener("click", () => updateAchievement("research"));
 
     // Dropdown functionality for About Us
-document.addEventListener("DOMContentLoaded", function () {
     const aboutLink = document.getElementById('navbarDropdown');
     const dropdown = document.getElementById('customDropdown');
 
@@ -477,12 +453,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Show/hide on click (mobile/touch)
         aboutLink.addEventListener('click', function(e) {
             e.preventDefault();
-            // Toggle dropdown
-            if (dropdown.style.display === 'block') {
-                dropdown.style.display = 'none';
-            } else {
-                dropdown.style.display = 'block';
-            }
+            dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
         });
 
         // Hide dropdown when clicking outside
